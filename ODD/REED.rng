@@ -1,17 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?> 
+<?xml version="1.0" encoding="utf-8"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0"
          xmlns:xlink="http://www.w3.org/1999/xlink"
          xmlns:tei="http://www.tei-c.org/ns/1.0"
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2016-08-12T22:25:27Z. .
+Schema generated from ODD source 2016-08-12T23:52:12Z. .
 TEI Edition: Version 3.0.0. Last updated on
 	29th March 2016, revision 89ba24e
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
-
-*DO NOT EDIT THIS SCHEMA DIRECTLY!! IT IS OUTPUT FROM A CONVERSION OF A 
-TEI ODD CUSTOMISATION FILE. SEE https://github.com/jamescummings/REED/tree/master/ODD
   
 --><!--[https://creativecommons.org/licenses/by/4.0/] Creative Commons Attribution-->
    <define name="macro.paraContent">
@@ -2899,7 +2896,7 @@ Normalization 12. Critical Apparatus]</a:documentation>
                   <value>lines</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The unit of the gap in this REED record (if known) is measured in lines</a:documentation>
                   <value>mm</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The unit of the gap in this REED record (if known) is measure in millimetres</a:documentation>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The unit of the gap in this REED record (if known) is measured in millimetres</a:documentation>
                </choice>
             </attribute>
          </optional>
@@ -3425,8 +3422,8 @@ Suggested values include: 1] gloss; 2] index; 3] instructions; 4] litany; 5] syl
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The note to this REED Record is in the margin</a:documentation>
                   <value>subhead</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The note to this REED Record is a subheading</a:documentation>
-                  <value>eccles_court</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The note to this REED Record is an eccles court note</a:documentation>
+                  <value>court</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The note to this REED Record is a court-related note</a:documentation>
                   <value>editorial</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The note to this REED Record is an editorial note</a:documentation>
                   <value>other</value>

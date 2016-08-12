@@ -420,8 +420,8 @@
                     <desc>The note to this REED Record is a subheading</desc>
                   </valItem>
                   <!-- This is far too specific to STAFF volume  -->
-                  <valItem ident="eccles_court">
-                    <desc>The note to this REED Record is an eccles court note</desc>
+                  <valItem ident="court">
+                    <desc>The note to this REED Record is a court-related note</desc>
                   </valItem>
                   <valItem ident="editorial">
                     <desc>The note to this REED Record is an editorial note</desc>
