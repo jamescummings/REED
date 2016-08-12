@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?> 
 <grammar xmlns="http://relaxng.org/ns/structure/1.0"
          xmlns:xlink="http://www.w3.org/1999/xlink"
          xmlns:tei="http://www.tei-c.org/ns/1.0"
@@ -9,6 +9,9 @@ Schema generated from ODD source 2016-08-12T22:25:27Z. .
 TEI Edition: Version 3.0.0. Last updated on
 	29th March 2016, revision 89ba24e
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.0.0/
+
+*DO NOT EDIT THIS SCHEMA DIRECTLY!! IT IS OUTPUT FROM A CONVERSION OF A 
+TEI ODD CUSTOMISATION FILE. SEE https://github.com/jamescummings/REED/tree/master/ODD
   
 --><!--[https://creativecommons.org/licenses/by/4.0/] Creative Commons Attribution-->
    <define name="macro.paraContent">
