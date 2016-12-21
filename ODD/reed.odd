@@ -416,7 +416,7 @@
                   <valItem ident="subhead">
                     <desc>The note to this REED Record is a subheading</desc>
                   </valItem>
-                  <!-- This is far too specific to STAFF volume -- deleting as requested  -->
+                  <!-- This is far too specific to STAFF volume - deleting as requested  -->
                  <!-- <valItem ident="court">
                     <desc>The note to this REED Record is a court-related note</desc>
                   </valItem> -->
@@ -944,11 +944,15 @@
                         <valItem ident="div2"/>
                         <valItem ident="div3"/>
                         <valItem ident="div4"/>-->
+                  <valItem ident="acknowledgments"><desc>This REED division is for the Acknowledgments section</desc></valItem>
+                  <valItem ident="appendix"><desc>This REED division is for the Acknowledgments section</desc></valItem>
+                  <valItem ident="background"><desc>This REED division is for the Historical Background section</desc></valItem>
                   <valItem ident="document_desc"><desc>This REED division is a document description</desc></valItem>
                   <valItem ident="endnote"><desc>This REED division is an endnote section</desc></valItem>
                   <valItem ident="repository_abbr"><desc>This REED division is a repository abbreviation</desc></valItem>
                   <valItem ident="symbols"><desc>This REED division is for symbols</desc></valItem>
                   <valItem ident="the_documents"><desc>This REED division is for The Documents</desc></valItem>
+                  <valItem ident="traditions"><desc>This REED division is for the Performance Traditions section</desc></valItem>
                   <valItem ident="transcription"><desc>This REED division is a transcription</desc></valItem>
                   <valItem ident="translation"><desc>This REED division is a translation</desc></valItem>
                   <valItem ident="other"><desc>This REED division is something else.  (If you use this more
