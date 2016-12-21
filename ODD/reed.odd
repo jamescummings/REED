@@ -52,7 +52,7 @@
           <moduleRef key="core"
             include="abbr add addrLine address author bibl biblScope cb choice 
                cit citedRange corr date del editor expan foreign gap gloss head hi item label lb list listBibl measure
-               milestone name note orig p pb ptr pubPlace publisher quote ref reg relatedItem resp respStmt sic term textLang title unclear"/>
+               milestone name note orig p pb ptr pubPlace publisher quote ref reg relatedItem resp respStmt rs sic term textLang title unclear"/>
 
           <!-- added 'erasure' to del as per request -->
           <elementSpec ident="del" mode="change" module="core">
