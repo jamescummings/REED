@@ -202,9 +202,6 @@
                         <valItem ident="council">
                            <desc>name of a council</desc>
                         </valItem>
-                        <valItem ident="court">
-                           <desc>name of a</desc>
-                        </valItem>
                         <valItem ident="court_legal">
                            <desc>name of a court or other legal body</desc>
                         </valItem>
@@ -419,10 +416,10 @@
                   <valItem ident="subhead">
                     <desc>The note to this REED Record is a subheading</desc>
                   </valItem>
-                  <!-- This is far too specific to STAFF volume  -->
-                  <valItem ident="court">
+                  <!-- This is far too specific to STAFF volume -- deleting as requested  -->
+                 <!-- <valItem ident="court">
                     <desc>The note to this REED Record is a court-related note</desc>
-                  </valItem>
+                  </valItem> -->
                   <valItem ident="editorial">
                     <desc>The note to this REED Record is an editorial note</desc>
                   </valItem>
