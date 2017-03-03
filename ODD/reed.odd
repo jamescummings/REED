@@ -50,18 +50,12 @@
 <!-- core module, lots of things. -->
 
           <moduleRef key="core"
-<<<<<<< HEAD
             include="abbr add addrLine address author bibl biblScope cb choice
                      cit citedRange corr date del editor expan foreign gap
                      gloss head hi item label l lb lg list listBibl measure
                      milestone name note orig p pb ptr pubPlace
                      publisher quote ref reg relatedItem resp respStmt
                      rs sic term textLang title unclear"/>
-=======
-            include="abbr add addrLine address author bibl biblScope cb choice 
-               cit citedRange corr date del editor expan foreign gap gloss head hi item label lb list listBibl measure
-               milestone name note orig p pb ptr pubPlace publisher quote ref reg relatedItem resp respStmt rs sic term textLang title unclear"/>
->>>>>>> 4311ed2a1b25514113f8a4101f9542123ab0652b
 
           <!-- added 'erasure' to del as per request -->
           <elementSpec ident="del" mode="change" module="core">
@@ -389,18 +383,12 @@
                     <desc>The note to this REED Record is a subheading</desc>
                   </valItem>
                   <!-- This is far too specific to STAFF volume - deleting as requested  -->
-<<<<<<< HEAD
                   <!-- <valItem ident="court">
                     <desc>The note to this REED Record is a court-related note</desc>
                     </valItem> -->
                   <valItem ident="techDesc">
                     <desc>This note is the full bibliographic citation for a print source from which record/s were derived</desc>
                   </valItem>
-=======
-                 <!-- <valItem ident="court">
-                    <desc>The note to this REED Record is a court-related note</desc>
-                  </valItem> -->
->>>>>>> 4311ed2a1b25514113f8a4101f9542123ab0652b
                   <valItem ident="editorial">
                     <desc>The note to this REED Record is an editorial note</desc>
                   </valItem>
@@ -940,24 +928,8 @@
             <attList>
               <attDef ident="type" mode="change">
                 <valList mode="add" type="semi">
-<<<<<<< HEAD
                   <valItem ident="appendix"><desc>This REED division is for the Appendix section</desc></valItem>
                   <valItem ident="endnote"><desc>This REED division is an endnote section</desc></valItem>
-=======
-                  <!--<valItem ident="div1"/>
-                        <valItem ident="div2"/>
-                        <valItem ident="div3"/>
-                        <valItem ident="div4"/>-->
-                  <valItem ident="acknowledgments"><desc>This REED division is for the Acknowledgments section</desc></valItem>
-                  <valItem ident="appendix"><desc>This REED division is for the Acknowledgments section</desc></valItem>
-                  <valItem ident="background"><desc>This REED division is for the Historical Background section</desc></valItem>
-                  <valItem ident="document_desc"><desc>This REED division is a document description</desc></valItem>
-                  <valItem ident="endnote"><desc>This REED division is an endnote section</desc></valItem>
-                  <valItem ident="repository_abbr"><desc>This REED division is a repository abbreviation</desc></valItem>
-                  <valItem ident="symbols"><desc>This REED division is for symbols</desc></valItem>
-                  <valItem ident="the_documents"><desc>This REED division is for The Documents</desc></valItem>
-                  <valItem ident="traditions"><desc>This REED division is for the Performance Traditions section</desc></valItem>
->>>>>>> 4311ed2a1b25514113f8a4101f9542123ab0652b
                   <valItem ident="transcription"><desc>This REED division is a transcription</desc></valItem>
                   <valItem ident="translation"><desc>This REED division is a translation</desc></valItem>
                   <valItem ident="other"><desc>This REED division is something else.  (If you use this more
