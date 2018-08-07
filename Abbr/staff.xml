@@ -14599,11 +14599,18 @@ table. The (blank) above is the second cell of that row -->the
                   </lg>
                   <gap reason="omitted"/>
                 </div>
+
               </div>
             </body>
           </floatingText>
         </div>
       </div>
+<div><p>This is a fake div not in the original
+
+by J<ex>ames</ex> C<ex>u</ex>m<ex>min</ex>gs
+ZZZZZtest<ex>test</ex>
+</p>
+</div>
     </back>
   </text>
 </TEI>

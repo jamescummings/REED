@@ -22,9 +22,15 @@
       <body>
          <p>This is a wordlist of expanded words in REED staff.xml and berks.xml 
                 with a count of how many times they appeared total.</p>
-         <p>There are 2467 expanded words once deep-equal duplicates have been removed 
-            from a total of 6489 expanded word instances.</p>
+         <p>There are 2516 expanded words once deep-equal duplicates have been removed 
+            from a total of 6743 expanded word instances.</p>
          <list>
+            <item n="39">
+               <ex>(English)</ex>
+            </item>
+            <item n="1">
+               <ex>(English)</ex>
+            </item>
             <item n="1">
                <ex>(sic.)</ex>
             </item>
@@ -80,7 +86,11 @@
             <item n="1">Assumpc<ex>i</ex>onis</item>
             <item n="1">Audito<ex>ur</ex>
             </item>
+            <item n="1">Ault<ex>er</ex>
+            </item>
             <item n="1">Bailiff<ex>es</ex>
+            </item>
+            <item n="2">Baliff<ex>es</ex>
             </item>
             <item n="1">Baptist<ex>i</ex>
             </item>
@@ -178,10 +188,12 @@
             <item n="1">Cl<ex>er</ex>ico</item>
             <item n="1">Cl<ex>er</ex>icu<ex>m</ex>
             </item>
-            <item n="2">Coat<ex>es</ex>
+            <item n="1">Coat<ex>es</ex>
+            </item>
+            <item n="2">Coll<ex>atis</ex>
             </item>
             <item n="1">Comandem<ex>en</ex>t</item>
-            <item n="1">Comaund<ex>es</ex>
+            <item n="2">Comaund<ex>es</ex>
             </item>
             <item n="1">Combinac<ex>i</ex>ons</item>
             <item n="1">Comissio<ex>ne</ex>
@@ -202,7 +214,7 @@
             <item n="1">Co<ex>m</ex>misioners</item>
             <item n="2">Com<ex>m</ex>iss<ex>ion</ex>
             </item>
-            <item n="1">Com<ex>m</ex>ission</item>
+            <item n="3">Com<ex>m</ex>ission</item>
             <item n="1">Co<ex>m</ex>mission</item>
             <item n="3">Co<ex>m</ex>missioners</item>
             <item n="5">Com<ex>m</ex>itted</item>
@@ -211,7 +223,7 @@
             <item n="1">Com<ex>m</ex>oners</item>
             <item n="4">Com<ex>m</ex>ons</item>
             <item n="1">Com<ex>m</ex>orac<ex>i</ex>o<ex>n</ex>is</item>
-            <item n="1">Co<ex>m</ex>municants</item>
+            <item n="2">Co<ex>m</ex>municants</item>
             <item n="1">Co<ex>mmun</ex>is</item>
             <item n="1">Comp<ex>any</ex>
             </item>
@@ -245,7 +257,7 @@
             <item n="1">Congregac<ex>i</ex>on</item>
             <item n="1">ConiesBilsonP<ex>redictu</ex>s</item>
             <item n="2">Conquero<ex>ur</ex>s</item>
-            <item n="2">Conscienc<ex>es</ex>
+            <item n="5">Conscienc<ex>es</ex>
             </item>
             <item n="1">Considerac<ex>i</ex>on</item>
             <item n="1">Considerac<ex>i</ex>onIn</item>
@@ -259,7 +271,7 @@
             </item>
             <item n="2">Corp<ex>er</ex>att</item>
             <item n="1">Corporac<ex>i</ex>on</item>
-            <item n="5">Coruesarr<ex>es</ex>
+            <item n="7">Coruesarr<ex>es</ex>
             </item>
             <item n="1">Cost<ex>es</ex>
             </item>
@@ -275,8 +287,13 @@
             </item>
             <item n="2">Cou<ex>ntie</ex>
             </item>
-            <item n="1">Co<ex>ur</ex>t</item>
+            <item n="2">Co<ex>ur</ex>t</item>
+            <item n="1">
+               <ex>Coventry</ex>
+            </item>
+            <item n="1">Cow<ex>m</ex>mpton</item>
             <item n="1">Cow<ex>m</ex>mptons</item>
+            <item n="1">C<ex>u</ex>m<ex>min</ex>gs</item>
             <item n="3">Cu<ex>m</ex>myng</item>
             <item n="2">Cur<ex>ia</ex>
             </item>
@@ -293,7 +310,11 @@
             <item n="1">DayeElecc<ex>i</ex>on</item>
             <item n="1">Dec<ex>ember</ex>
             </item>
-            <item n="5">Diabol<ex>um</ex>
+            <item n="1">Diabol<ex>um</ex>
+            </item>
+            <item n="3">Diss<ex>ertione</ex>
+            </item>
+            <item n="3">Do<ex>mini</ex>
             </item>
             <item n="1">D<ex>omi</ex>ni</item>
             <item n="1">D<ex>omi</ex>nicum</item>
@@ -343,7 +364,8 @@
             <item n="1">Em<ex>enda</ex>uit</item>
             <item n="1">Empt<ex>a</ex>
             </item>
-            <item n="2">Ep<ex>iscop</ex>o</item>
+            <item n="1">Ep<ex>iscop</ex>o</item>
+            <item n="2">Ep<ex>iscopu</ex>m</item>
             <item n="1">Est<ex>er</ex>
             </item>
             <item n="1">Est<ex>e</ex>r</item>
@@ -429,6 +451,7 @@
             </item>
             <item n="2">Iep<ex>ar</ex>dy</item>
             <item n="1">Iep<ex>ar</ex>dye</item>
+            <item n="3">I<ex>es</ex>u</item>
             <item n="5">I<ex>esus</ex>
             </item>
             <item n="2">Impr<ex>im</ex>is</item>
@@ -449,7 +472,13 @@
             </item>
             <item n="1">Inment<ex>es</ex>
             </item>
+            <item n="1">Innoce<ex>n</ex>ciu<ex>m</ex>
+            </item>
             <item n="1">Innocenct<ex>is</ex>
+            </item>
+            <item n="1">Innocent<ex>es</ex>
+            </item>
+            <item n="1">Innoce<ex>n</ex>tiu<ex>m</ex>
             </item>
             <item n="1">Innoce<ex>n</ex>t<ex>u</ex>m</item>
             <item n="3">Inpan<ex>n</ex>ill</item>
@@ -483,7 +512,7 @@
             </item>
             <item n="1">Ioh<ex>ann</ex>em</item>
             <item n="1">Ioh<ex>ann</ex>i</item>
-            <item n="1">Ioh<ex>an</ex>nis</item>
+            <item n="2">Ioh<ex>an</ex>nis</item>
             <item n="2">Ioh<ex>ann</ex>is</item>
             <item n="1">Io<ex>hn</ex>
             </item>
@@ -495,7 +524,7 @@
             <item n="1">
                <ex>Isab</ex>
             </item>
-            <item n="564">It<ex>a</ex>m</item>
+            <item n="569">It<ex>a</ex>m</item>
             <item n="9">Ite<ex>m</ex>
             </item>
             <item n="1">It<ex>e</ex>m</item>
@@ -550,6 +579,8 @@
             </item>
             <item n="1">Iustici<ex>arijs</ex>
             </item>
+            <item n="1">J<ex>ames</ex>
+            </item>
             <item n="1">Joh<ex>ann</ex>is</item>
             <item n="1">Jo<ex>hn</ex>
             </item>
@@ -571,16 +602,18 @@
             <item n="1">Lancastr<ex>ie</ex>
             </item>
             <item n="1">Leeftenau<ex>n</ex>t</item>
-            <item n="2">Lich<ex>feldiam</ex>
+            <item n="1">Lich<ex>feldiam</ex>
+            </item>
+            <item n="2">Lich<ex>feldis</ex>
             </item>
             <item n="1">Lich<ex>field</ex>
             </item>
             <item n="1">L<ex>itte</ex>re</item>
-            <item n="9">Londr<ex>es</ex>
-            </item>
-            <item n="5">L<ex>ord</ex>
+            <item n="14">Londr<ex>es</ex>
             </item>
             <item n="2">Lo<ex>rd</ex>
+            </item>
+            <item n="2">L<ex>ord</ex>
             </item>
             <item n="2">Lord<ex>es</ex>
             </item>
@@ -592,14 +625,16 @@
             <item n="2">Ma<ex>ies</ex>tei<ex>s</ex>
             </item>
             <item n="2">Ma<ex>ies</ex>tes</item>
-            <item n="1">Mai<ex>es</ex>t<ex>es</ex>
+            <item n="9">Mai<ex>es</ex>t<ex>es</ex>
             </item>
             <item n="2">Ma<ex>ies</ex>t<ex>es</ex>
             </item>
             <item n="21">Ma<ex>ies</ex>ti</item>
-            <item n="12">Ma<ex>ies</ex>t<ex>ie</ex>
+            <item n="10">Ma<ex>ies</ex>t<ex>ie</ex>
             </item>
-            <item n="2">Ma<ex>ies</ex>tie</item>
+            <item n="5">Mai<ex>estie</ex>
+            </item>
+            <item n="3">Ma<ex>ies</ex>tie</item>
             <item n="21">M<ex>aies</ex>ties</item>
             <item n="9">Ma<ex>ie</ex>st<ex>ies</ex>
             </item>
@@ -607,7 +642,7 @@
             </item>
             <item n="7">M<ex>aies</ex>t<ex>ies</ex>
             </item>
-            <item n="1">Ma<ex>ies</ex>t<ex>ies</ex>
+            <item n="2">Ma<ex>ies</ex>t<ex>ies</ex>
             </item>
             <item n="2">Ma<ex>ies</ex>ties</item>
             <item n="1">Ma<ex>ies</ex>ty</item>
@@ -644,19 +679,20 @@
             <item n="12">MinstrellsProclamac<ex>i</ex>on</item>
             <item n="1">Minstrill<ex>es</ex>
             </item>
+            <item n="1">M<ex>iste</ex>r</item>
             <item n="1">Mitr<ex>a</ex>
             </item>
             <item n="1">Mons<ex>ire</ex>
             </item>
-            <item n="3">Mor<ex>es</ex>
+            <item n="5">Mor<ex>es</ex>
             </item>
             <item n="2">Music<ex>i</ex>ons</item>
             <item n="1">Mvsic<ex>i</ex>ons</item>
-            <item n="1">Mynd<ex>es</ex>
+            <item n="2">Mynd<ex>es</ex>
             </item>
             <item n="4">Mynstrall<ex>is</ex>
             </item>
-            <item n="2">Mynstrell<ex>es</ex>
+            <item n="3">Mynstrell<ex>es</ex>
             </item>
             <item n="2">Natal<ex>is</ex>
             </item>
@@ -681,6 +717,8 @@
             </item>
             <item n="1">Nov<ex>embr</ex>i<ex>s</ex>
             </item>
+            <item n="1">Num<ex>erum</ex>
+            </item>
             <item n="1">Nundin<ex>as</ex>
             </item>
             <item n="1">Ockingha<ex>m</ex>
@@ -699,6 +737,8 @@
             <item n="1">Ordinanc<ex>es</ex>
             </item>
             <item n="1">Ordin<ex>um</ex>
+            </item>
+            <item n="1">Oteland<ex>es</ex>
             </item>
             <item n="1">Oxford<ex>es</ex>
             </item>
@@ -742,6 +782,7 @@
             </item>
             <item n="2">Purificac<ex>i</ex>on</item>
             <item n="1">P<ex>ur</ex>sall</item>
+            <item n="1">Queen<ex>e</ex>s</item>
             <item n="1">Q<ex>ueenes</ex>
             </item>
             <item n="1">Quor<ex>um</ex>
@@ -824,7 +865,7 @@
             <item n="3">Ric<ex>ard</ex>o</item>
             <item n="2">Ric<ex>ard</ex>um</item>
             <item n="2">Ric<ex>ard</ex>us</item>
-            <item n="12">Ricatt<ex>es</ex>
+            <item n="13">Ricatt<ex>es</ex>
             </item>
             <item n="1">Ric<ex>hard</ex>
             </item>
@@ -857,7 +898,7 @@
             <item n="2">Rob<ex>er</ex>t<ex>es</ex>
             </item>
             <item n="1">Rob<ex>er</ex>ti</item>
-            <item n="3">Robertu<ex>m</ex>
+            <item n="4">Robertu<ex>m</ex>
             </item>
             <item n="2">Roby<ex>n</ex>
             </item>
@@ -871,7 +912,7 @@
             <item n="4">Ryott<ex>es</ex>
             </item>
             <item n="2">S<ex>ain</ex>t</item>
-            <item n="2">Salop<ex>ia</ex>
+            <item n="3">Salop<ex>ia</ex>
             </item>
             <item n="1">S<ex>an</ex>c<ex>t</ex>i</item>
             <item n="2">Sand<ex>es</ex>
@@ -903,7 +944,9 @@
             </item>
             <item n="1">Sherriff<ex>es</ex>
             </item>
-            <item n="6">Shiriff<ex>es</ex>
+            <item n="2">Shiriff<ex>es</ex>
+            </item>
+            <item n="6">Silu<ex>er</ex>
             </item>
             <item n="1">Simil<ex>ite</ex>r</item>
             <item n="12">Simil<ex>ite</ex>rIb<ex>ide</ex>m</item>
@@ -913,7 +956,7 @@
             <item n="2">Som<ex>er</ex>game</item>
             <item n="1">Som<ex>m</ex>a</item>
             <item n="1">Som<ex>m</ex>ar</item>
-            <item n="1">So<ex>m</ex>me</item>
+            <item n="2">So<ex>m</ex>me</item>
             <item n="1">So<ex>m</ex>mer</item>
             <item n="1">Sop<ex>er</ex>
             </item>
@@ -937,7 +980,7 @@
             </item>
             <item n="1">Stook<ex>es</ex>
             </item>
-            <item n="28">Street<ex>es</ex>
+            <item n="29">Street<ex>es</ex>
             </item>
             <item n="1">Subiect<ex>es</ex>
             </item>
@@ -958,6 +1001,7 @@
             <item n="1">
                <ex>Syb</ex>
             </item>
+            <item n="1">Tab<ex>er</ex>nacles</item>
             <item n="1">Ta<ex>n</ex>k<ex>es</ex>
             </item>
             <item n="2">TarreWill<ex>ia</ex>m</item>
@@ -1033,32 +1077,23 @@
             <item n="13">Will<ex>i</ex>am</item>
             <item n="7">Willia<ex>m</ex>
             </item>
-            <item n="2">W<ex>illia</ex>m</item>
+            <item n="5">W<ex>illia</ex>m</item>
             <item n="1">Will<ex>ia</ex>m</item>
             <item n="1">Will<ex>ia</ex>mBailliffes</item>
             <item n="1">Will<ex>ia</ex>ms</item>
             <item n="1">Will<ex>iams</ex>Will<ex>iams</ex>
             </item>
             <item n="2">Will<ex>im</ex>i</item>
-            <item n="1">W<ex>i</ex>t<ex>h</ex>
+            <item n="2">W<ex>i</ex>t<ex>h</ex>
             </item>
             <item n="1">W<ex>i</ex>th</item>
             <item n="2">Woodcock<ex>es</ex>
             </item>
             <item n="1">Wyll<ex>ia</ex>m</item>
             <item n="1">Yo<ex>u</ex>r</item>
+            <item n="1">ZZZZZtest<ex>test</ex>
+            </item>
             <item n="1">abb<ex>at</ex>e</item>
-            <item n="1">abbrevia<ex>tion</ex>
-            </item>
-            <item n="1">
-               <ex>abbr</ex>eviation</item>
-            <item n="1">
-               <ex>abbr</ex>evia<ex>tion</ex>
-            </item>
-            <item n="1">abbr<ex>evia</ex>tion</item>
-            <item n="1">
-               <ex>ab</ex>br<ex>evia</ex>ti<ex>on</ex>
-            </item>
             <item n="5">abingeto<ex>n</ex>
             </item>
             <item n="1">about<ex>es</ex>
@@ -1131,8 +1166,9 @@
             </item>
             <item n="7">amerciament<ex>es</ex>
             </item>
-            <item n="3">a<ex>n</ex>d</item>
-            <item n="1">an<ex>n</ex>o</item>
+            <item n="1">a<ex>n</ex>d</item>
+            <item n="3">a<ex>n</ex>nis</item>
+            <item n="2">an<ex>n</ex>o</item>
             <item n="1">a<ex>nn</ex>o</item>
             <item n="1">an<ex>n</ex>oq<ex>ue</ex>
             </item>
@@ -1240,15 +1276,15 @@
             <item n="1">b<ex>ie</ex>n</item>
             <item n="3">bill<ex>es</ex>
             </item>
-            <item n="2">blackbird<ex>es</ex>
+            <item n="3">blackbird<ex>es</ex>
             </item>
-            <item n="1">board<ex>es</ex>
+            <item n="2">board<ex>es</ex>
             </item>
-            <item n="1">bok<ex>es</ex>
+            <item n="2">bok<ex>es</ex>
             </item>
             <item n="1">book<ex>es</ex>
             </item>
-            <item n="1">book<ex>es</ex>Item</item>
+            <item n="2">book<ex>es</ex>Item</item>
             <item n="1">bord<ex>es</ex>
             </item>
             <item n="1">bott<ex>es</ex>
@@ -1309,7 +1345,7 @@
             <item n="1">c<ex>er</ex>taine</item>
             <item n="2">c<ex>er</ex>taines</item>
             <item n="2">c<ex>er</ex>tayn</item>
-            <item n="2">c<ex>er</ex>ten</item>
+            <item n="4">c<ex>er</ex>ten</item>
             <item n="2">c<ex>er</ex>teyn</item>
             <item n="1">certificand<ex>um</ex>
             </item>
@@ -1327,8 +1363,8 @@
             <item n="1">cet<ex>er</ex>a</item>
             <item n="1">ceynt<ex>ur</ex>e</item>
             <item n="1">chambe<ex>r</ex>layne</item>
-            <item n="3">cha<ex>m</ex>berle<ex>n</ex>s</item>
-            <item n="8">chardg<ex>es</ex>
+            <item n="5">cha<ex>m</ex>berle<ex>n</ex>s</item>
+            <item n="10">chardg<ex>es</ex>
             </item>
             <item n="3">charg<ex>es</ex>
             </item>
@@ -1388,7 +1424,7 @@
             <item n="1">comma<ex>n</ex>dim<ex>en</ex>t</item>
             <item n="1">comma<ex>n</ex>diment</item>
             <item n="1">commandm<ex>en</ex>t</item>
-            <item n="4">co<ex>m</ex>mandment</item>
+            <item n="5">co<ex>m</ex>mandment</item>
             <item n="1">co<ex>m</ex>maunded</item>
             <item n="1">commaundem<ex>en</ex>t</item>
             <item n="1">co<ex>m</ex>maundement</item>
@@ -1413,19 +1449,19 @@
             <item n="1">co<ex>m</ex>minge</item>
             <item n="1">com<ex>m</ex>is</item>
             <item n="1">com<ex>m</ex>itted</item>
-            <item n="1">com<ex>mmun</ex>i</item>
+            <item n="2">com<ex>mmun</ex>i</item>
             <item n="7">co<ex>m</ex>moditie</item>
             <item n="1">com<ex>m</ex>on</item>
-            <item n="1">co<ex>m</ex>mon</item>
+            <item n="2">co<ex>m</ex>mon</item>
             <item n="1">com<ex>m</ex>only</item>
-            <item n="2">com<ex>m</ex>oune</item>
+            <item n="3">com<ex>m</ex>oune</item>
             <item n="1">co<ex>mmun</ex>i</item>
             <item n="1">c<ex>ommu</ex>ni</item>
             <item n="1">co<ex>mmu</ex>nis</item>
             <item n="2">co<ex>mmun</ex>itatem</item>
             <item n="1">co<ex>m</ex>myng</item>
             <item n="1">com<ex>m</ex>ynge</item>
-            <item n="7">compaigno<ex>n</ex>s</item>
+            <item n="8">compaigno<ex>n</ex>s</item>
             <item n="1">co<ex>m</ex>pany</item>
             <item n="1">compa<ex>n</ex>ye</item>
             <item n="1">c<ex>o</ex>mp<ex>are</ex>nde<ex>n</ex>tcomparendent</item>
@@ -1450,7 +1486,7 @@
             </item>
             <item n="1">complic<ex>es</ex>
             </item>
-            <item n="1">co<ex>m</ex>positis</item>
+            <item n="2">co<ex>m</ex>positis</item>
             <item n="1">
                <ex>com</ex>pot<ex>um</ex>
             </item>
@@ -1473,7 +1509,7 @@
             <item n="1">
                <ex>con</ex>gregati</item>
             <item n="1">cong<ex>ru</ex>e</item>
-            <item n="1">cons<ex>i</ex>d<ex>er</ex>ac<ex>i</ex>on</item>
+            <item n="2">cons<ex>i</ex>d<ex>er</ex>ac<ex>i</ex>on</item>
             <item n="1">considerac<ex>i</ex>on</item>
             <item n="1">considerac<ex>i</ex>ons</item>
             <item n="1">consi<ex>mi</ex>li</item>
@@ -1483,6 +1519,7 @@
             </item>
             <item n="1">conspirato<ex>r</ex>s</item>
             <item n="1">co<ex>n</ex>streindre</item>
+            <item n="1">co<ex>n</ex>sudendo</item>
             <item n="2">consuet<ex>i</ex>
             </item>
             <item n="1">cons<ex>uetudine</ex>
@@ -1490,7 +1527,7 @@
             <item n="2">consuetudi<ex>n</ex>e</item>
             <item n="1">consuetud<ex>ine</ex>
             </item>
-            <item n="1">consuetudi<ex>n</ex>em</item>
+            <item n="2">consuetudi<ex>n</ex>em</item>
             <item n="1">co<ex>n</ex>suetudo</item>
             <item n="2">
                <ex>con</ex>taigned</item>
@@ -1538,6 +1575,7 @@
             </item>
             <item n="2">cu<ex>m</ex>myn</item>
             <item n="1">cu<ex>m</ex>myng</item>
+            <item n="1">c<ex>ur</ex>tayn</item>
             <item n="1">custum<ex>m</ex>e</item>
             <item n="1">dabu<ex>n</ex>t</item>
             <item n="3">dacq<ex>ui</ex>tances</item>
@@ -1559,9 +1597,11 @@
             </item>
             <item n="1">dat<ex>is</ex>
             </item>
+            <item n="1">dat<ex>o</ex>
+            </item>
             <item n="2">dat<ex>os</ex>
             </item>
-            <item n="3">daug<ex>us</ex>te</item>
+            <item n="5">daug<ex>us</ex>te</item>
             <item n="2">daunc<ex>eres</ex>
             </item>
             <item n="1">daunc<ex>er</ex>s</item>
@@ -1587,11 +1627,11 @@
             </item>
             <item n="3">decembr<ex>is</ex>
             </item>
-            <item n="1">declarac<ex>i</ex>on</item>
+            <item n="2">declarac<ex>i</ex>on</item>
             <item n="1">decollac<ex>i</ex>onis</item>
             <item n="1">decreuer<ex>u</ex>nt</item>
             <item n="2">decreueru<ex>n</ex>t</item>
-            <item n="3">decrev<ex>i</ex>t</item>
+            <item n="4">decrev<ex>i</ex>t</item>
             <item n="3">dedicac<ex>i</ex>on</item>
             <item n="4">defend<ex>an</ex>t</item>
             <item n="1">def<ex>endant</ex>
@@ -1706,6 +1746,7 @@
             </item>
             <item n="1">diuidant<ex>ur</ex>
             </item>
+            <item n="1">di<ex>ui</ex>na</item>
             <item n="1">dn<ex>ot</ex>a</item>
             <item n="4">dogg<ex>es</ex>
             </item>
@@ -1767,9 +1808,9 @@
             <item n="1">dyu<ex>er</ex>se</item>
             <item n="1">ead<ex>e</ex>m</item>
             <item n="1">ea<ex>dem</ex>eadem</item>
-            <item n="1">eand<ex>em</ex>
+            <item n="2">eand<ex>em</ex>
             </item>
-            <item n="1">east<ex>er</ex>
+            <item n="2">east<ex>er</ex>
             </item>
             <item n="1">eccl<ex>es</ex>ia</item>
             <item n="1">ecc<ex>les</ex>ia</item>
@@ -1795,7 +1836,9 @@
             <item n="1">elecc<ex>i</ex>on</item>
             <item n="1">elecc<ex>i</ex>ons</item>
             <item n="1">elecc<ex>i</ex>onthe</item>
-            <item n="2">elec<ex>i</ex>on</item>
+            <item n="1">elec<ex>i</ex>on</item>
+            <item n="3">eligendu<ex>m</ex>
+            </item>
             <item n="1">ell<ex>es</ex>
             </item>
             <item n="2">emp<ex>ri</ex>soned</item>
@@ -1834,7 +1877,7 @@
             <item n="1">erro<ex>ur</ex>
             </item>
             <item n="2">e<ex>ss</ex>e</item>
-            <item n="2">e<ex>st</ex>
+            <item n="3">e<ex>st</ex>
             </item>
             <item n="1">est<ex>e</ex>r</item>
             <item n="1">est<ex>er</ex>
@@ -1843,7 +1886,7 @@
             <item n="5">eu<ex>e</ex>r</item>
             <item n="4">eu<ex>er</ex>
             </item>
-            <item n="9">eu<ex>er</ex>ie</item>
+            <item n="10">eu<ex>er</ex>ie</item>
             <item n="7">eu<ex>er</ex>y</item>
             <item n="4">eu<ex>er</ex>ye</item>
             <item n="1">eu<ex>m</ex>
@@ -1879,7 +1922,7 @@
             <item n="1">existent<ex>ibus</ex>
             </item>
             <item n="1">expedic<ex>i</ex>on</item>
-            <item n="2">expe<ex>n</ex>sas</item>
+            <item n="3">expe<ex>n</ex>sas</item>
             <item n="1">exp<ex>e</ex>ns<ex>is</ex>
             </item>
             <item n="5">expens<ex>is</ex>
@@ -1887,6 +1930,8 @@
             <item n="1">ex<ex>pensum</ex>
             </item>
             <item n="1">ext<ex>r</ex>a</item>
+            <item n="1">ex<ex>trahatur</ex>
+            </item>
             <item n="1">faciend<ex>um</ex>
             </item>
             <item n="1">facien<ex>tes</ex>facien<ex>tes</ex>
@@ -1904,7 +1949,7 @@
             <item n="2">fact<ex>um</ex>
             </item>
             <item n="1">faireIt<ex>e</ex>m</item>
-            <item n="1">fam<ex>ilia</ex>S<ex>i</ex>r</item>
+            <item n="2">fam<ex>ilia</ex>S<ex>i</ex>r</item>
             <item n="1">famul<ex>is</ex>
             </item>
             <item n="2">fam<ex>u</ex>lo</item>
@@ -1919,7 +1964,7 @@
             </item>
             <item n="2">fem<ex>m</ex>e</item>
             <item n="1">f<ex>est</ex>o</item>
-            <item n="2">f<ex>est</ex>um</item>
+            <item n="3">f<ex>est</ex>um</item>
             <item n="1">fest<ex>um</ex>
             </item>
             <item n="1">f<ex>estu</ex>m</item>
@@ -1965,7 +2010,7 @@
             </item>
             <item n="1">folk<ex>es</ex>
             </item>
-            <item n="1">forefront<ex>es</ex>
+            <item n="2">forefront<ex>es</ex>
             </item>
             <item n="1">foreu<ex>er</ex>more</item>
             <item n="1">for<ex>isfacture</ex>
@@ -2042,7 +2087,7 @@
             <item n="1">gent<ex>lemen</ex>
             </item>
             <item n="1">gent<ex>le</ex>men</item>
-            <item n="1">gentle<ex>men</ex>
+            <item n="2">gentle<ex>men</ex>
             </item>
             <item n="1">gent<ex>lemen's</ex>
             </item>
@@ -2057,7 +2102,7 @@
             </item>
             <item n="1">godd<ex>es</ex>
             </item>
-            <item n="10">god<ex>es</ex>
+            <item n="11">god<ex>es</ex>
             </item>
             <item n="1">good<ex>es</ex>
             </item>
@@ -2102,13 +2147,13 @@
             <item n="1">habitac<ex>i</ex>o<ex>n</ex>is</item>
             <item n="1">h<ex>ab</ex>it<ex>um</ex>
             </item>
-            <item n="6">halbert<ex>es</ex>
+            <item n="7">halbert<ex>es</ex>
             </item>
             <item n="1">hand<ex>es</ex>
             </item>
             <item n="1">harp<ex>er</ex>
             </item>
-            <item n="3">harrold<ex>es</ex>
+            <item n="4">harrold<ex>es</ex>
             </item>
             <item n="1">hart<ex>es</ex>
             </item>
@@ -2136,7 +2181,7 @@
             </item>
             <item n="1">hi<ex>m</ex>
             </item>
-            <item n="1">hi<ex>m</ex>selffe</item>
+            <item n="2">hi<ex>m</ex>selffe</item>
             <item n="1">h<ex>i</ex>s</item>
             <item n="1">histrionib<ex>us</ex>
             </item>
@@ -2144,7 +2189,7 @@
             </item>
             <item n="1">hodd<ex>es</ex>
             </item>
-            <item n="1">ho<ex>m</ex>
+            <item n="2">ho<ex>m</ex>
             </item>
             <item n="1">homi<ex>n</ex>es</item>
             <item n="1">hom<ex>in</ex>ib<ex>us</ex>
@@ -2153,12 +2198,12 @@
             <item n="3">hond<ex>es</ex>
             </item>
             <item n="1">hon<ex>or</ex>able</item>
-            <item n="1">ho<ex>nora</ex>ble</item>
+            <item n="2">ho<ex>nora</ex>ble</item>
             <item n="4">honor<ex>em</ex>
             </item>
             <item n="1">hon<ex>our</ex>
             </item>
-            <item n="2">hono<ex>ur</ex>
+            <item n="4">hono<ex>ur</ex>
             </item>
             <item n="1">hono<ex>u</ex>r</item>
             <item n="1">hono<ex>ura</ex>ble</item>
@@ -2166,7 +2211,9 @@
             <item n="1">ho<ex>ora</ex>ble</item>
             <item n="1">hor<ex>a</ex>
             </item>
-            <item n="2">hui<ex>us</ex>
+            <item n="1">hui<ex>us</ex>
+            </item>
+            <item n="2">h<ex>uius</ex>
             </item>
             <item n="1">h<ex>uius</ex>mo<ex>d</ex>i</item>
             <item n="1">humfreys<ex>ir</ex>
@@ -2179,6 +2226,9 @@
             <item n="1">ib<ex>ide</ex>m</item>
             <item n="1">id<ex>eo</ex>
             </item>
+            <item n="1">
+               <ex>ie,</ex>
+            </item>
             <item n="1">ientac<ex>u</ex>l<ex>u</ex>m</item>
             <item n="1">illeoq<ex>es</ex>
             </item>
@@ -2188,7 +2238,10 @@
             <item n="2">i<ex>m</ex>mediatly</item>
             <item n="1">imp<ex>er</ex>petuu<ex>m</ex>
             </item>
+            <item n="1">imploym<ex>en</ex>t</item>
             <item n="1">imprisonm<ex>en</ex>t</item>
+            <item n="1">i<ex>n</ex>
+            </item>
             <item n="1">inc<ex>er</ex>taineties</item>
             <item n="1">inconvenient<ex>es</ex>
             </item>
@@ -2255,7 +2308,7 @@
             </item>
             <item n="1">kenill<ex>worth</ex>
             </item>
-            <item n="3">kenne<ex>n</ex>t</item>
+            <item n="5">kenne<ex>n</ex>t</item>
             <item n="27">k<ex>inges</ex>
             </item>
             <item n="1">king<ex>es</ex>
@@ -2265,7 +2318,7 @@
             </item>
             <item n="4">knott<ex>es</ex>
             </item>
-            <item n="19">know<ex>e</ex>t<ex>h</ex>
+            <item n="21">know<ex>e</ex>t<ex>h</ex>
             </item>
             <item n="1">kyng<ex>es</ex>
             </item>
@@ -2327,7 +2380,7 @@
             </item>
             <item n="2">lordeshipp<ex>es</ex>
             </item>
-            <item n="1">lo<ex>ur</ex>
+            <item n="3">lo<ex>ur</ex>
             </item>
             <item n="1">luctorib<ex>us</ex>
             </item>
@@ -2335,11 +2388,13 @@
             </item>
             <item n="3">lud<ex>um</ex>
             </item>
-            <item n="1">ludu<ex>m</ex>
+            <item n="2">ludu<ex>m</ex>
             </item>
             <item n="1">lud<ex>us</ex>
             </item>
-            <item n="4">lus<ex>er</ex>unt</item>
+            <item n="1">lus<ex>er</ex>unt</item>
+            <item n="4">lusori<ex>bus</ex>
+            </item>
             <item n="3">lusor<ex>ibus</ex>
             </item>
             <item n="1">lusorib<ex>us</ex>
@@ -2401,7 +2456,7 @@
             <item n="1">marresdau<ex>n</ex>ce</item>
             <item n="2">ma<ex>r</ex>serr<ex>es</ex>
             </item>
-            <item n="19">mast<ex>er</ex>
+            <item n="20">mast<ex>er</ex>
             </item>
             <item n="4">m<ex>aster</ex>
             </item>
@@ -2431,7 +2486,7 @@
             <item n="2">m<ex>er</ex>cement<ex>es</ex>
             </item>
             <item n="1">mich<ex>ael</ex>is</item>
-            <item n="1">milit<ex>em</ex>
+            <item n="2">milit<ex>em</ex>
             </item>
             <item n="1">mimor<ex>um</ex>
             </item>
@@ -2450,7 +2505,7 @@
             <item n="1">minoru<ex>m</ex>
             </item>
             <item n="4">mi<ex>n</ex>stralcie</item>
-            <item n="1">minstrell<ex>es</ex>
+            <item n="2">minstrell<ex>es</ex>
             </item>
             <item n="1">mi<ex>n</ex>strells</item>
             <item n="1">minstryle<ex>s</ex>
@@ -2465,7 +2520,10 @@
             <item n="1">m<ex>isericordia</ex>
             </item>
             <item n="1">m<ex>isericord</ex>ia</item>
+            <item n="1">mistrell<ex>es</ex>
+            </item>
             <item n="1">mistrell<ex>es</ex>mistrelles</item>
+            <item n="1">mo<ex>d</ex>i</item>
             <item n="1">monach<ex>is</ex>
             </item>
             <item n="1">m<ex>o</ex>ndayhok</item>
@@ -2522,7 +2580,7 @@
             <item n="2">nomeb<ex>e</ex>r</item>
             <item n="3">no<ex>n</ex>
             </item>
-            <item n="22">n<ex>ost</ex>ra</item>
+            <item n="23">n<ex>ost</ex>ra</item>
             <item n="17">n<ex>os</ex>tre</item>
             <item n="93">n<ex>ostr</ex>e</item>
             <item n="4">n<ex>ost</ex>re</item>
@@ -2541,7 +2599,9 @@
             </item>
             <item n="8">n<ex>u</ex>l<ex>la</ex>
             </item>
-            <item n="1">n<ex>ul</ex>l<ex>a</ex>
+            <item n="2">n<ex>ul</ex>l<ex>a</ex>
+            </item>
+            <item n="1">nullaten<ex>us</ex>
             </item>
             <item n="1">n<ex>u</ex>l<ex>lum</ex>
             </item>
@@ -2580,7 +2640,7 @@
             </item>
             <item n="1">other<ex>es</ex>
             </item>
-            <item n="3">othersM<ex>emoran</ex>d<ex>um</ex>
+            <item n="4">othersM<ex>emoran</ex>d<ex>um</ex>
             </item>
             <item n="3">ou<ex>e</ex>r</item>
             <item n="2">ou<ex>er</ex>
@@ -2591,9 +2651,9 @@
             <item n="1">ouesq<ex>ue</ex>
             </item>
             <item n="1">ouesq<ex>ue</ex>Pur</item>
-            <item n="23">oup<ex>ur</ex>
+            <item n="24">oup<ex>ur</ex>
             </item>
-            <item n="13">o<ex>ur</ex>
+            <item n="15">o<ex>ur</ex>
             </item>
             <item n="2">o<ex>u</ex>r</item>
             <item n="1">ovesq<ex>ue</ex>
@@ -2604,7 +2664,7 @@
             </item>
             <item n="13">pag<ex>ina</ex>
             </item>
-            <item n="71">p<ex>aid</ex>
+            <item n="72">p<ex>aid</ex>
             </item>
             <item n="1">p<ex>ai</ex>d</item>
             <item n="11">p<ex>ai</ex>dc</item>
@@ -2615,9 +2675,9 @@
             </item>
             <item n="43">pap<ex>er</ex>
             </item>
-            <item n="1">p<ex>ar</ex>
+            <item n="2">p<ex>ar</ex>
             </item>
-            <item n="4">p<ex>ar</ex>achianor<ex>um</ex>
+            <item n="5">p<ex>ar</ex>achianor<ex>um</ex>
             </item>
             <item n="1">p<ex>ar</ex>cell</item>
             <item n="1">p<ex>ar</ex>celles</item>
@@ -2628,8 +2688,8 @@
             </item>
             <item n="1">p<ex>ar</ex>entre</item>
             <item n="6">p<ex>ar</ex>ibus</item>
-            <item n="5">p<ex>ar</ex>ish</item>
-            <item n="1">p<ex>ar</ex>ishe</item>
+            <item n="10">p<ex>ar</ex>ish</item>
+            <item n="2">p<ex>ar</ex>ishe</item>
             <item n="2">p<ex>ar</ex>isheners</item>
             <item n="1">p<ex>ar</ex>issh</item>
             <item n="1">pariu<ex>m</ex>
@@ -2648,7 +2708,7 @@
             <item n="1">p<ex>ar</ex>ochiep<ex> ar</ex>ochie</item>
             <item n="1">p<ex>ar</ex>och<ex>ie</ex>p<ex>ar</ex>och<ex>ie</ex>
             </item>
-            <item n="2">p<ex>ar</ex>olip<ex>ar</ex>oli</item>
+            <item n="3">p<ex>ar</ex>olip<ex>ar</ex>oli</item>
             <item n="10">p<ex>ar</ex>son</item>
             <item n="24">p<ex>ar</ex>t</item>
             <item n="2">p<ex>ar</ex>te</item>
@@ -2675,6 +2735,9 @@
             <item n="1">p<ex>ar</ex>uant</item>
             <item n="1">pas<ex>che</ex>
             </item>
+            <item n="1">
+               <ex>passim</ex>
+            </item>
             <item n="1">pastor<ex>um</ex>
             </item>
             <item n="1">pastur<ex>es</ex>
@@ -2684,11 +2747,15 @@
             <item n="2">paup<ex>er</ex>es</item>
             <item n="1">paup<ex>er</ex>u<ex>m</ex>
             </item>
-            <item n="1">paup<ex>er</ex>u<ex>m</ex>pauperum</item>
+            <item n="2">paup<ex>er</ex>u<ex>m</ex>pauperum</item>
             <item n="3">pavement<ex>es</ex>
             </item>
             <item n="7">p<ex>ay</ex>d</item>
             <item n="1">p<ex>aye</ex>d</item>
+            <item n="1">payme<ex>n</ex>t<ex>es</ex>
+            </item>
+            <item n="1">payment<ex>es</ex>
+            </item>
             <item n="1">paynt<ex>er</ex>
             </item>
             <item n="1">peec<ex>es</ex>
@@ -2727,14 +2794,14 @@
             <item n="1">p<ex>er</ex>mittant<ex>ur</ex>
             </item>
             <item n="1">p<ex>er</ex>mitted</item>
-            <item n="1">p<ex>er</ex>mitterint</item>
+            <item n="2">p<ex>er</ex>mitterint</item>
             <item n="1">p<ex>er</ex>mittim<ex>us</ex>
             </item>
             <item n="1">p<ex>er</ex>mytt</item>
             <item n="1">p<ex>er</ex>nicious</item>
             <item n="1">p<ex>er</ex>niciouse</item>
             <item n="1">p<ex>er</ex>petrate</item>
-            <item n="2">p<ex>er</ex>petuall</item>
+            <item n="3">p<ex>er</ex>petuall</item>
             <item n="1">p<ex>er</ex>petuallie</item>
             <item n="2">p<ex>er</ex>plexity</item>
             <item n="7">p<ex>er</ex>quisite</item>
@@ -2789,7 +2856,7 @@
             <item n="1">poll<ex>es</ex>
             </item>
             <item n="1">porc<ex>i</ex>on</item>
-            <item n="2">porcio<ex>n</ex>ib<ex>us</ex>
+            <item n="3">porcio<ex>n</ex>ib<ex>us</ex>
             </item>
             <item n="1">porc<ex>i</ex>ons</item>
             <item n="1">pos<ex>tea</ex>
@@ -2889,7 +2956,7 @@
             <item n="1">p<ex>re</ex>posesp<ex>re</ex>poses</item>
             <item n="8">p<ex>re</ex>s</item>
             <item n="13">p<ex>re</ex>sence</item>
-            <item n="2">p<ex>rese</ex>nt</item>
+            <item n="4">p<ex>rese</ex>nt</item>
             <item n="2">p<ex>re</ex>sent</item>
             <item n="2">pr<ex>e</ex>sent</item>
             <item n="1">p<ex>rese</ex>ntac<ex>i</ex>o<ex>n</ex>em</item>
@@ -2905,12 +2972,12 @@
             <item n="1">p<ex>rese</ex>ntat<ex>i</ex>
             </item>
             <item n="1">p<ex>resen</ex>tat<ex>i</ex>14</item>
-            <item n="1">p<ex>rese</ex>n<ex>tati</ex>sp<ex>rese</ex>n<ex> tati</ex>s</item>
+            <item n="2">p<ex>rese</ex>n<ex>tati</ex>sp<ex>rese</ex>n<ex> tati</ex>s</item>
             <item n="1">p<ex>re</ex>sente</item>
             <item n="4">pr<ex>esen</ex>ted</item>
             <item n="1">p<ex>re</ex>sented</item>
             <item n="1">p<ex>re</ex>sentelye</item>
-            <item n="2">p<ex>rese</ex>ntes</item>
+            <item n="3">p<ex>rese</ex>ntes</item>
             <item n="1">p<ex>re</ex>sent<ex>es</ex>
             </item>
             <item n="1">p<ex>rese</ex>ntespresentes</item>
@@ -2930,6 +2997,7 @@
             <item n="1">p<ex>re</ex>tence</item>
             <item n="3">p<ex>re</ex>tended</item>
             <item n="1">p<ex>re</ex>tending</item>
+            <item n="1">p<ex>re</ex>ter</item>
             <item n="1">p<ex>re</ex>vailed</item>
             <item n="4">p<ex>re</ex>vented</item>
             <item n="1">p<ex>r</ex>ic<ex>e</ex>
@@ -2946,9 +3014,9 @@
             </item>
             <item n="1">p<ex>ri</ex>s</item>
             <item n="1">p<ex>ri</ex>son</item>
-            <item n="1">prison<ex>er</ex>s</item>
+            <item n="2">prison<ex>er</ex>s</item>
             <item n="1">p<ex>ri</ex>uelege</item>
-            <item n="29">p<ex>ri</ex>uey</item>
+            <item n="30">p<ex>ri</ex>uey</item>
             <item n="1">p<ex>ro</ex>
             </item>
             <item n="1">p<ex>robati</ex>
@@ -2958,7 +3026,7 @@
             </item>
             <item n="1">p<ex>ro</ex>ceeding<ex>es</ex>
             </item>
-            <item n="2">p<ex>ro</ex>ces</item>
+            <item n="3">p<ex>ro</ex>ces</item>
             <item n="1">p<ex>ro</ex>cessio</item>
             <item n="1">p<ex>ro</ex>cessu<ex>m</ex>
             </item>
@@ -2977,12 +3045,12 @@
             <item n="1">p<ex>ro</ex>fet</item>
             <item n="1">p<ex>ro</ex>fight</item>
             <item n="1">p<ex>ro</ex>fit</item>
-            <item n="1">profitt<ex>es</ex>
+            <item n="2">profitt<ex>es</ex>
             </item>
             <item n="3">p<ex>ro</ex>fytt</item>
             <item n="1">p<ex>ro</ex>gresse</item>
             <item n="1">p<ex>ro</ex>iect</item>
-            <item n="2">p<ex>ro</ex>iecting</item>
+            <item n="3">p<ex>ro</ex>iecting</item>
             <item n="1">p<ex>ro</ex>mise</item>
             <item n="1">p<ex>ro</ex>mised</item>
             <item n="2">p<ex>ro</ex>mises</item>
@@ -3038,12 +3106,16 @@
             </item>
             <item n="1">publiq<ex>ue</ex>
             </item>
+            <item n="1">pueril<ex>i</ex>
+            </item>
             <item n="1">pu<ex>er</ex>is</item>
-            <item n="51">pu<ex>er</ex>or<ex>um</ex>
+            <item n="1">pu<ex>er</ex>or<ex>um</ex>
+            </item>
+            <item n="51">pueror<ex>um</ex>
             </item>
             <item n="1">p<ex>ur</ex>
             </item>
-            <item n="1">p<ex>ur</ex>ce</item>
+            <item n="2">p<ex>ur</ex>ce</item>
             <item n="2">purgac<ex>i</ex>o<ex>n</ex>em</item>
             <item n="3">p<ex>ur</ex>port</item>
             <item n="1">p<ex>ur</ex>sall</item>
@@ -3061,7 +3133,7 @@
             <item n="2">quali<ex>be</ex>t</item>
             <item n="2">qua<ex>m</ex>
             </item>
-            <item n="1">q<ex>u</ex>a<ex>m</ex>
+            <item n="2">q<ex>u</ex>a<ex>m</ex>
             </item>
             <item n="1">qu<ex>and</ex>o</item>
             <item n="1">q<ex>ua</ex>nt</item>
@@ -3111,7 +3183,7 @@
             </item>
             <item n="1">rebellandu<ex>m</ex>
             </item>
-            <item n="1">rec<ex>eaued</ex>
+            <item n="2">rec<ex>eaued</ex>
             </item>
             <item n="2">receit<ex>es</ex>
             </item>
@@ -3139,13 +3211,13 @@
             <item n="1">reconing<ex>es</ex>
             </item>
             <item n="1">reco<ex>n</ex>ninges</item>
-            <item n="1">record<ex>es</ex>
+            <item n="2">record<ex>es</ex>
             </item>
             <item n="1">r<ex>eddit</ex>
             </item>
             <item n="1">redditu<ex>m</ex>
             </item>
-            <item n="1">red<ex>er</ex>unt</item>
+            <item n="2">red<ex>er</ex>unt</item>
             <item n="1">reformac<ex>i</ex>on</item>
             <item n="1">regard<ex>es</ex>
             </item>
@@ -3189,12 +3261,12 @@
             <item n="2">r<ex>esp</ex>ondet</item>
             <item n="1">r<ex>espo</ex>ndet</item>
             <item n="1">r<ex>es</ex>pondet</item>
-            <item n="2">restituend<ex>a</ex>
+            <item n="5">restituend<ex>a</ex>
             </item>
             <item n="1">resurrecc<ex>i</ex>on</item>
             <item n="1">reto<ex>ur</ex>ne</item>
             <item n="1">reu<ex>er</ex>ence</item>
-            <item n="1">reward<ex>es</ex>
+            <item n="2">reward<ex>es</ex>
             </item>
             <item n="1">reward<ex>o</ex>
             </item>
@@ -3216,8 +3288,9 @@
             <item n="1">sal<ex>u</ex>t<ex>e</ex>m</item>
             <item n="2">s<ex>ame</ex>
             </item>
-            <item n="5">s<ex>an</ex>c<ex>t</ex>e</item>
-            <item n="2">s<ex>an</ex>c<ex>t</ex>i</item>
+            <item n="3">s<ex>an</ex>c<ex>t</ex>e</item>
+            <item n="5">s<ex>anc</ex>ti</item>
+            <item n="3">s<ex>an</ex>c<ex>t</ex>i</item>
             <item n="1">s<ex>an</ex>c<ex>t</ex>or<ex>um</ex>
             </item>
             <item n="1">satisfactu<ex>m</ex>
@@ -3227,12 +3300,14 @@
             </item>
             <item n="1">schedul<ex>am</ex>
             </item>
+            <item n="1">scholariu<ex>m</ex>
+            </item>
             <item n="1">schoolem<ex>aste</ex>r</item>
-            <item n="1">scienc<ex>es</ex>
+            <item n="2">scienc<ex>es</ex>
             </item>
             <item n="1">sc<ex>ilicet</ex>
             </item>
-            <item n="1">scituac<ex>i</ex>on</item>
+            <item n="2">scituac<ex>i</ex>on</item>
             <item n="1">seat<ex>es</ex>
             </item>
             <item n="1">s<ex>e</ex>cond</item>
@@ -3299,13 +3374,13 @@
             <item n="1">s<ex>er</ex>uices</item>
             <item n="1">s<ex>er</ex>uic<ex>ia</ex>
             </item>
-            <item n="1">s<ex>er</ex>uicia</item>
+            <item n="2">s<ex>er</ex>uicia</item>
             <item n="2">s<ex>er</ex>uienc<ex>i</ex>u<ex>m</ex>
             </item>
             <item n="2">s<ex>er</ex>uir</item>
             <item n="1">s<ex>er</ex>unts<ex>er</ex>unt</item>
             <item n="3">s<ex>er</ex>vant</item>
-            <item n="2">serv<ex>an</ex>t<ex>es</ex>
+            <item n="4">serv<ex>an</ex>t<ex>es</ex>
             </item>
             <item n="1">servant<ex>es</ex>
             </item>
@@ -3325,7 +3400,9 @@
             </item>
             <item n="1">shilling<ex>es</ex>
             </item>
-            <item n="14">s<ex>ieur</ex>
+            <item n="1">s<ex>ieur</ex>
+            </item>
+            <item n="15">silv<ex>er</ex>
             </item>
             <item n="1">s<ex>ir</ex>
             </item>
@@ -3345,18 +3422,18 @@
             </item>
             <item n="4">solut<ex>os</ex>
             </item>
-            <item n="1">sol<ex>utum</ex>
+            <item n="2">sol<ex>utum</ex>
             </item>
             <item n="3">solut<ex>um</ex>
             </item>
             <item n="2">solvend<ex>um</ex>
             </item>
-            <item n="3">som<ex>m</ex>e</item>
+            <item n="4">som<ex>m</ex>e</item>
             <item n="1">so<ex>m</ex>me</item>
             <item n="3">som<ex>m</ex>er</item>
             <item n="1">som<ex>m</ex>es</item>
             <item n="5">som<ex>m</ex>ons</item>
-            <item n="4">sop<ex>er</ex>
+            <item n="5">sop<ex>er</ex>
             </item>
             <item n="1">sou<ex>er</ex>aigne</item>
             <item n="1">sou<ex>er</ex>eign<ex>e</ex>
@@ -3364,7 +3441,7 @@
             <item n="1">souldzp<ex>re</ex>nd<ex>r</ex>a</item>
             <item n="1">souzno<ex>m</ex>mees</item>
             <item n="2">s<ex>pe</ex>ciall</item>
-            <item n="4">sp<ex>ec</ex>iall</item>
+            <item n="5">sp<ex>ec</ex>iall</item>
             <item n="1">sport<ex>es</ex>
             </item>
             <item n="2">spyc<ex>es</ex>
@@ -3405,7 +3482,7 @@
             </item>
             <item n="1">successorib<ex>us</ex>
             </item>
-            <item n="18">suit<ex>es</ex>
+            <item n="19">suit<ex>es</ex>
             </item>
             <item n="1">su<ex>m</ex>
             </item>
@@ -3416,7 +3493,8 @@
             <item n="1">su<ex>m</ex>merpole</item>
             <item n="1">sumptib<ex>us</ex>
             </item>
-            <item n="3">s<ex>uo</ex>
+            <item n="1">su<ex>m</ex>what</item>
+            <item n="4">s<ex>uo</ex>
             </item>
             <item n="4">suor<ex>um</ex>
             </item>
@@ -3424,7 +3502,7 @@
             </item>
             <item n="1">supp<ex>er</ex>
             </item>
-            <item n="8">suppler<ex>e</ex>
+            <item n="9">suppler<ex>e</ex>
             </item>
             <item n="3">s<ex>upra</ex>
             </item>
@@ -3443,7 +3521,7 @@
             </item>
             <item n="1">sword<ex>es</ex>
             </item>
-            <item n="1">take<ex>n</ex>
+            <item n="2">take<ex>n</ex>
             </item>
             <item n="1">t<ex>ame</ex>n</item>
             <item n="1">ta<ex>m</ex>worth</item>
@@ -3491,7 +3569,9 @@
             <item n="1">thEllec<ex>i</ex>on</item>
             <item n="3">tha<ex>n</ex>
             </item>
-            <item n="2">thank<ex>es</ex>
+            <item n="1">thank<ex>es</ex>
+            </item>
+            <item n="2">thapparell<ex>es</ex>
             </item>
             <item n="3">thapp<ex>ar</ex>ell<ex>es</ex>
             </item>
@@ -3529,6 +3609,8 @@
             <item n="1">thy<ex>n</ex>gs</item>
             <item n="1">togethe<ex>r</ex>
             </item>
+            <item n="1">tonck<ex>es</ex>
+            </item>
             <item n="1">total<ex>is</ex>
             </item>
             <item n="6">to<ex>to</ex>
@@ -3561,7 +3643,7 @@
             <item n="1">vardyn<ex>es</ex>
             </item>
             <item n="1">vehem<ex>en</ex>t</item>
-            <item n="2">
+            <item n="3">
                <ex>ve</ex>l</item>
             <item n="1">v<ex>e</ex>l</item>
             <item n="1">ven<ex>er</ex>is</item>
@@ -3657,6 +3739,8 @@
             <item n="1">warr<ex>an</ex>t</item>
             <item n="1">warrant<ex>um</ex>
             </item>
+            <item n="1">waynema<ex>n</ex>
+            </item>
             <item n="3">waynema<ex>n</ex>s</item>
             <item n="1">wedding<ex>es</ex>
             </item>
@@ -3672,9 +3756,9 @@
             <item n="1">w<ex>he</ex>r</item>
             <item n="76">wherw<ex>i</ex>t<ex>h</ex>
             </item>
-            <item n="1">w<ex>hich</ex>
+            <item n="2">w<ex>hich</ex>
             </item>
-            <item n="8">w<ex>hic</ex>h</item>
+            <item n="9">w<ex>hic</ex>h</item>
             <item n="1">w<ex>hi</ex>ch</item>
             <item n="1">w<ex>hi</ex>che</item>
             <item n="1">whom<ex>e</ex>
@@ -3685,15 +3769,15 @@
             <item n="1">wif<ex>es</ex>
             </item>
             <item n="1">will<ex>elmu</ex>m</item>
-            <item n="26">will<ex>el</ex>m<ex>u</ex>sExoneratur</item>
-            <item n="8">will<ex>ia</ex>m</item>
+            <item n="32">will<ex>el</ex>m<ex>u</ex>sExoneratur</item>
+            <item n="3">will<ex>ia</ex>m</item>
             <item n="1">w<ex>illia</ex>m</item>
             <item n="2">willi<ex>a</ex>m</item>
             <item n="1">will<ex>i</ex>am</item>
-            <item n="128">willia<ex>m</ex>
+            <item n="133">willia<ex>m</ex>
             </item>
             <item n="23">w<ex>it</ex>h</item>
-            <item n="13">w<ex>ith</ex>
+            <item n="15">w<ex>ith</ex>
             </item>
             <item n="9">w<ex>i</ex>t<ex>h</ex>
             </item>
@@ -3702,7 +3786,7 @@
             <item n="2">w<ex>i</ex>thcwithc</item>
             <item n="1">w<ex>i</ex>thholde</item>
             <item n="8">w<ex>i</ex>thholdeth</item>
-            <item n="15">w<ex>i</ex>t<ex>h</ex>in</item>
+            <item n="18">w<ex>i</ex>t<ex>h</ex>in</item>
             <item n="22">w<ex>i</ex>thin</item>
             <item n="2">w<ex>i</ex>t<ex>h</ex>out</item>
             <item n="2">w<ex>i</ex>thout</item>
@@ -3745,7 +3829,9 @@
             </item>
             <item n="48">yark<ex>es</ex>
             </item>
-            <item n="2">y<ex>a</ex>t</item>
+            <item n="1">y<ex>a</ex>t</item>
+            <item n="2">yeat<ex>es</ex>
+            </item>
             <item n="1">y<ex>e</ex>m</item>
             <item n="1">y<ex>e</ex>msels</item>
             <item n="7">y<ex>er</ex>

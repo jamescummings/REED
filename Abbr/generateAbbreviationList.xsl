@@ -38,7 +38,7 @@
     <xsl:template name="main">
         <!-- Mark Words -->
         <xsl:variable name="pass0">
-            <xsl:apply-templates select="$docs//body//div[@type='transcription']" mode="pass0"/>
+            <xsl:apply-templates select="$docs" mode="pass0"/>
         </xsl:variable>
         <!-- Group words with abbreviations -->
         <xsl:variable name="pass1">
@@ -104,7 +104,7 @@
     
     
     
-    <xsl:template match="body//div[@type='transcription']//text()[not(ancestor-or-self::w)][not(ancestor-or-self::ex)]" mode="pass0"> 
+    <xsl:template match="text()[not(ancestor-or-self::w)][not(ancestor-or-self::ex)]" mode="pass0"> 
         <xsl:analyze-string regex="(\w+|;,.!:'+)" select=".">
             <xsl:matching-substring><w><xsl:value-of select="."/></w></xsl:matching-substring>
             <xsl:non-matching-substring><xsl:value-of select="."/></xsl:non-matching-substring>
