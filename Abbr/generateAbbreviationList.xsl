@@ -3,12 +3,20 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" 
     xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xpath-default-namespace="http://www.tei-c.org/ns/1.0"
     exclude-result-prefixes="xs xd tei #default" version="2.0" >
-    
+    <xsl:output indent="yes"/>
     <xd:doc scope="stylesheet">
         <xd:desc>
-            <xd:p><xd:b>Created on:</xd:b> August 6 2018 but modified many times thereafter</xd:p>
+            <xd:p><xd:b>Created on:</xd:b> August 7 2018 but modified many times thereafter</xd:p>
             <xd:p><xd:b>Author:</xd:b> jamesc</xd:p>
             <xd:p>Convert REED Volumes to Abbbreviations wordlist</xd:p>
+            <xd:p>
+                Run with:
+                
+                rm abbreviations-wordlist.xml ;
+                saxon -xsl:generateAbbreviationList.xsl -it:main -o:abbreviations-wordlist.xml
+                
+                
+            </xd:p>
         </xd:desc>
     </xd:doc>
    
@@ -51,7 +59,7 @@
         </xsl:variable>
         <xsl:variable name="pass4">
             <xsl:for-each-group select="$pass3/w" group-starting-with="w[not(some $i in following-sibling::w satisfies deep-equal($i, .))]">
-<w n="{count(current-group())}"><xsl:apply-templates mode="pass4"/></w><xsl:text>
+<item n="{count(current-group())}"><xsl:apply-templates mode="pass4"/></item><xsl:text>
 </xsl:text>
             </xsl:for-each-group>
         </xsl:variable>
@@ -62,9 +70,37 @@
         <w n="13">w<ex>i</ex>th</w>
         <w n="9">w<ex>i</ex>th</w>
         -->
-        
-<p><xsl:copy-of select="$pass4"/></p>        
-    </xsl:template>
+<!-- Main document -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>REED Abbreviation Wordlist</title>
+            </titleStmt>
+            <publicationStmt>
+                <authority><persName>James Cummings</persName></authority>
+                <availability><licence target="https://creativecommons.org/licenses/by/4.0/">CC+By</licence></availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Abbreviation Wordlist from REED staff.xml and berks.xml</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>This is a wordlist of expanded words in REED staff.xml and berks.xml 
+                with a count of how many times they appeared total.</p>
+            <p>There are <xsl:value-of select="count($pass4/item)"/> expanded words once deep-equal duplicates have been removed 
+            from a total of <xsl:value-of select="sum($pass4/item/@n)"/> expanded word instances.</p>
+                          
+              <list>
+                  <xsl:copy-of select="$pass4"/>
+              </list>        
+        </body>
+    </text>
+</TEI>
+</xsl:template>
     
     
     
