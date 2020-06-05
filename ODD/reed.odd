@@ -468,7 +468,8 @@
 -->
             </attList>
           </elementSpec>
-          <!-- date: modify @type -->
+          
+          <!-- date: modify @type added by DJ-->
           <elementSpec ident="date" mode="change" module="core">
             <attList>
               <attDef ident="type" mode="change">
@@ -488,11 +489,6 @@
                   </valItem>
                 </valList>
               </attDef>
-            </attList>
-          </elementSpec>
-          <!-- date: modify @cert -->
-          <elementSpec ident="date" mode="change" module="core">
-            <attList>
               <attDef ident="cert" mode="change">
                 <valList mode="add" type="closed">
                   <valItem ident="definite">
@@ -592,6 +588,9 @@
                   </valItem>
                   <valItem ident="editorial">
                     <desc>The note to this REED Record is an editorial note</desc>
+                  </valItem>
+                  <valItem ident="collation">
+                    <desc>This note to this REED Record contains collated text</desc>
                   </valItem>
                   <valItem ident="other">
                     <desc>The note to this REED Record is another type of note. (If you use this
@@ -925,7 +924,7 @@
           
           <!-- delete lots of attributes -->
           <!-- persName: modify @cert for CWRC -->
-          <!-- CUSTOMIZATION: modify name:@role -->
+          <!-- CUSTOMIZATION: modify name:@role added by DJ-->
           <elementSpec ident="name" mode="change" module="namesdates">
             <attList>
               <attDef ident="role" mode="change">
@@ -1007,7 +1006,7 @@
             </attList>
           </elementSpec>
           
-          <!-- placeName: modify @cert for CWRC -->
+          <!-- placeName: modify @cert for CWRC added by DJ -->
           <elementSpec ident="placeName" mode="change" module="namesdates">
             <attList>
               <attDef ident="cert" mode="change">
