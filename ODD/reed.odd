@@ -24,6 +24,7 @@
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
+      <change when="2020-07-26" who="#JC">Various minor updates to ODD over time, version 0.8</change>
       <change when="2018-07-11" who="#JC">Minor updates to ODD, version 0.5</change>
       <change when="2018-07-11" who="#DKJ">Revision of ODD to version 0.4</change>
       <change when="2016-08-07" who="#JC">Revision of ODD to version 0.3</change>
@@ -45,7 +46,7 @@
           <!-- sp/speaker/stage needed by REED:London -->
           <moduleRef key="core"
             include="abbr add addrLine address author bibl biblScope cb choice cit citedRange corr 
-            date del editor expan foreign gap gloss head hi item label l lb lg list listBibl 
+            date del desc editor expan foreign gap graphic gloss head hi item label l lb lg list listBibl 
             measure milestone name note orig p pb ptr pubPlace  publisher quote 
             ref reg relatedItem resp respStmt rs sic sp speaker stage term textLang title unclear"/>
           
@@ -1136,8 +1137,6 @@
           </classSpec>
           <!-- delete lots of attributes -->
           <classSpec ident="att.datcat" module="tei" type="atts" mode="delete"/>
-          <classSpec ident="att.declarable" module="tei" type="atts" mode="delete"/>
-          <classSpec ident="att.declaring" module="tei" type="atts" mode="delete"/>
           <classSpec ident="att.divLike" module="tei" type="atts" mode="delete"/>
           <classSpec ident="att.duration.iso" module="tei" type="atts" mode="delete"/>
           <!-- delete lots of attributes -->
@@ -1282,7 +1281,7 @@
           
           <!-- transcription module -->
           <moduleRef key="transcr"
-            include="am addSpan damage delSpan ex fw handShift space subst supplied surplus"/>
+            include="am addSpan damage delSpan ex facsimile fw handShift space subst supplied surface surplus"/>
           
           <elementSpec ident="addSpan" mode="change" module="transcr">
             <attList>
