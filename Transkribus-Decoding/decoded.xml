@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>Some text here. </p>
+         <p>Here is some text 
+            This is a p<ex n="৲¢">ro</ex> abbreviation and imp<ex n="৲¢">ro</ex>vements need to be made.
+         </p>
+         <p>Letter (only italics) Replacement symbol 
+         
+         Thi<ex n="\$">a</ex> i<ex n="\$">a</ex> a te<ex n="\$">a</ex>t, only a te<ex n="\$">a</ex>t
+         </p>
+         
+         <p>DNI = d<ex n="¢">o</ex><ex n="₱">m</ex><ex n="€">i</ex>ni<ex n="¥₱">um</ex>
+         
+         </p>
+         <p>a <ex n="\$">a</ex> </p>
+         <p>e <ex n="£">e</ex> </p>
+         <p>i <ex n="€">i</ex> </p>
+         <p>o <ex n="¢">o</ex> </p>
+         <p>u <ex n="¥">u</ex> </p>
+         <p>b <ex n="₽">b</ex> </p>
+         <p>c <ex n="₯">c</ex> </p>
+         <p>d <ex n="₨">d</ex> </p>
+         <p>g <ex n="₩">g</ex> </p>
+         <p>h <ex n="฿">h</ex> </p>
+         <p>j <ex n="₺">j</ex> </p>
+         <p>l <ex n="₮">l</ex> </p>
+         <p>m <ex n="₱">m</ex> </p>
+         <p>n <ex n="₭">n</ex> </p>
+         <p>p <ex n="₴">p</ex> </p>
+         <p>q <ex n="₦">q</ex> </p>
+         <p>r <ex n="৲">r</ex> </p>
+         <p>s <ex n="৳">s</ex> </p>
+         <p>t <ex n="૱">t</ex> </p>
+         <p>w <ex n="௹">w</ex> </p>
+         <p>ar <ex n="\$৲">ar</ex> </p>
+         <p>arij <ex n="\$৲€₺">arij</ex> </p>
+         <p>em <ex n="£₱">em</ex> </p>
+         <p>er <ex n="£৲">er</ex> </p>
+         <p>es <ex n="£৳">es</ex> </p>
+         <p>ie <ex n="€£">ie</ex> </p>
+         <p>is <ex n="€৳">is</ex> </p>
+         <p>ium <ex n="€¥₱">ium</ex> </p>
+         <p>min <ex n="₱€₭">min</ex> </p>
+         <p>or <ex n="¢৲">or</ex> </p>
+         <p>orum <ex n="¢৲¥₱">orum</ex> </p>
+         <p>ro <ex n="৲¢">ro</ex> </p>
+         <p>sum <ex n="৳¥₱">sum</ex> </p>
+         <p>tum <ex n="૱¥₱">tum</ex> </p>
+         <p>um <ex n="¥₱">um</ex> </p>
+         <p>uo <ex n="¥¢">uo</ex> </p>
+         <p>us <ex n="¥৳">us</ex> </p>
+      </body>
+   </text>
+</TEI>
