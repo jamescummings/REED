@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">REED London Online</title>
+            <funder>
+               <orgName>Andrew W. Mellon Foundation<address>
+                     <addrLine>140 E. 62nd Street</addrLine>
+                     <addrLine>New York, NY 1006</addrLine>
+                     <addrLine>United States of America</addrLine>
+                  </address>
+               </orgName>
+               <date from-iso="2018-01-01" to-iso="2018-12-31">NHPRC-Mellon Planning Grant</date>
+               <date from-iso="2020-01-01" to-iso="2022-12-31">NHPRC-Mellon Implementation
+                  Grant</date>
+            </funder>
+
+            <!-- The following persons participated in the second phase of REED London Online, funded by an NHPRC-Andrew W. Mellon Digital Edition Publishing Cooperatives Implementation Grant, 2020-22  -->
+
+            <respStmt>
+               <persName xml:id="JAKA1">Diane K. Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Principal Investigator, REED London Online</resp>
+               <resp>Records of Early English Drama (REED) Executive Board</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="CB">Carolyn Black</persName>
+               <orgName>Records of Early English Drama (REED)</orgName>
+               <resp>Project Manager, REED</resp>
+               <resp>NHPRC-Mellon Project Team Member, 2018-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Susan Brown</persName>
+               <orgName>University of Guelph</orgName>
+               <resp>Lead Investigator, Canadian Writing Research Collaboratory (CWRC)</resp>
+               <resp>NHPRC-Mellon Project Team Member, 2018-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="JC">James Cummings</persName>
+               <orgName>Newcastle University</orgName>
+               <resp>NHPRC-Mellon Project Team Member, 2018-Present</resp>
+               <resp>Records of Early English Drama (REED) Executive Board</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Mihaela Ilovan</persName>
+               <orgName>CWRC</orgName>
+               <resp>Project Manager, CWRC</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sally-Beth MacLean</persName>
+               <orgName>Records of Early English Drama (REED)</orgName>
+               <resp>Director of Research and General Editor</resp>
+               <resp>NHPRC-Mellon Project Team Member, 2018-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Kim Martin</persName>
+               <orgName>University of Guelph</orgName>
+               <resp>NHPRC-Mellon Project Team Member, 2018-Present</resp>
+               <resp>Linked Data Consultant</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Rachel Millio</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant, 2018-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Charlotte Simon</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant, 2018-Present</resp>
+            </respStmt>
+
+            <!-- The following additional persons participated in the first phase of REED London, funded by an NHPRC-Andrew W. Mellon Digital Edition Publishing Cooperatives Planning Grant, 2018 -->
+
+            <respStmt>
+               <persName>John Bradley</persName>
+               <resp>NHPRC-Mellon Project Team Member, 2018</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Kathy Chung</persName>
+               <orgName>Records of Early English Drama (REED)</orgName>
+               <resp>REED Research Associate, NHPRC-Mellon Project Consultant, 2018</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matthew Davies</persName>
+               <orgName>University of London, Birkbeck College</orgName>
+               <resp>Records of Early English Drama (REED) Executive Board</resp>
+               <resp>NHPRC-Mellon Project Team Member, 2018</resp>
+            </respStmt>
+            <respStmt>
+               <persName>David Kathman</persName>
+               <resp>NHPRC-Mellon Project Team Member, 2018</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Maureen Maclean</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>REED London Research Assistant, 2018-2020</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Christopher Matusiak</persName>
+               <orgName>Ithaca College</orgName>
+               <resp>NHPRC-Mellon Project Team Member, 2018</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Dorothy Porter</persName>
+               <orgName>University of Pennsylvania</orgName>
+               <resp>NHPRC-Mellon Project Team Member, 2018</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Suzanne Westfall</persName>
+               <orgName>Lafayette College</orgName>
+               <resp>Records of Early English Drama (REED) Executive Board Member</resp>
+               <resp>NHPRC-Mellon Project Team Member, 2018</resp>
+            </respStmt>
+
+            <!-- The following persons are editors of REED print collections considered in REED London Online -->
+
+            <respStmt>
+               <persName>John R. Elliott Jr.</persName>
+               <resp>Editor, Inns of Court</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Mary C. Erler</persName>
+               <resp>Editor, Ecclesiastical London</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Anne Lancashire</persName>
+               <resp>Editor, Civic London to 1558</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Alan H. Nelson</persName>
+               <resp>Editor, Inns of Court</resp>
+            </respStmt>
+
+            <!-- The following persons are members of the REED Executive Board (2020-2021) -->
+            <respStmt>
+               <persName>Carolyn Black</persName>
+               <orgName>University of Toronto</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>John Craig</persName>
+               <orgName>Simon Fraser University</orgName>
+               <resp>Chair</resp>
+            </respStmt>
+            <respStmt>
+               <persName>James Cummings</persName>
+               <orgName>Newcastle University</orgName>
+               <resp>Board Member</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matthew Davies</persName>
+               <orgName>University of London</orgName>
+               <resp>Board Member</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Alexandra Gillespie</persName>
+               <orgName>University of Toronto</orgName>
+               <resp>Board Member</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Peter Greenfield</persName>
+               <orgName>University of Puget Sound</orgName>
+               <resp>Secretary</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Board Member</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Alexandra F. Johnston</persName>
+               <orgName>University of Toronto</orgName>
+               <resp>Founder and Senior Consultant</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sally-Beth MacLean</persName>
+               <orgName>University of Toronto</orgName>
+               <resp>Director of Research and General Editor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>C.E. McGee</persName>
+               <orgName>St Jerome’s University</orgName>
+               <resp>Board Member</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Alan H. Nelson</persName>
+               <orgName>University of California, Berkeley</orgName>
+               <resp>Board Member</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Paul Stevens</persName>
+               <orgName>University of Toronto </orgName>
+               <resp>Chair of English, ex officio</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Suzanne Westfall</persName>
+               <orgName>Lafayette College</orgName>
+               <resp>Board Member</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matthew Woodcock</persName>
+               <orgName>University of East Anglia</orgName>
+               <resp>Board Member</resp>
+            </respStmt>
+            <respStmt>
+               <persName>John Bradley</persName>
+               <orgName>King’s College London</orgName>
+               <resp>Senior Digital Advisor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>J.J. McGavin</persName>
+               <orgName>University of Southampton</orgName>
+               <resp>Corresponding Advisor</resp>
+            </respStmt>
+
+            <!-- The following persons were REED directors and editorial staff involved in the print publication of Civic London to 1558, Ecclesiastical London, and Inns of Court -->
+
+            <respStmt>
+               <persName>Carolyn Black</persName>
+               <orgName>Records of Early English Drama (REED)</orgName>
+               <resp>Associate Editor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Jason Boyd</persName>
+               <orgName>Records of Early English Drama (REED)</orgName>
+               <resp>Patrons Researcher, Inns of Court</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Patrick Gregory</persName>
+               <orgName>Records of Early English Drama (REED)</orgName>
+               <resp>Associate Editor, Civic London to 1558 and Inns of Court</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Tanya Hagen</persName>
+               <orgName>Records of Early English Drama (REED)</orgName>
+               <resp>Bibliographer</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Alexandra F. Johnston</persName>
+               <orgName>Records of Early English Drama (REED)</orgName>
+               <resp>Director</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Milton Kooistra</persName>
+               <orgName>Records of Early English Drama (REED)</orgName>
+               <resp>Associate Bibliographer, Inns of Court</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Maria Lau</persName>
+               <orgName>Records of Early English Drama (REED)</orgName>
+               <resp>Typesetter, Civic London to 1558 and Inns of Court</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sally-Beth MacLean</persName>
+               <orgName>Records of Early English Drama (REED)</orgName>
+               <resp>Associate Director/Executive Editor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Gord Oxley</persName>
+               <orgName>Records of Early English Drama (REED)</orgName>
+               <resp>Typesetter, Civic London to 1558 and Ecclesiastical London</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Arleane Ralph</persName>
+               <orgName>Records of Early English Drama (REED)</orgName>
+               <resp>Associate Editor, Ecclesiastical London</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Abigail Ann Young</persName>
+               <orgName>Records of Early English Drama (REED)</orgName>
+               <resp>Associate Editor</resp>
+            </respStmt>
+
+         </titleStmt>
+         <editionStmt>
+            <edition>version 2, released <date when-iso="2020-01-01">1 January 2020</date></edition>
+         </editionStmt>
+         <publicationStmt>
+            <authority>
+               <orgName>Records of Early English Drama (REED)</orgName>
+               <address>
+                  <addrLine>University of Toronto</addrLine>
+                  <addrLine>170 St George Street, Suite 810</addrLine>
+                  <addrLine>Toronto, Ontario, Canada</addrLine>
+                  <addrLine>M5R 2M8</addrLine>
+               </address>
+            </authority>
+            <availability>
+               <p>Copyright <orgName>Records of Early English Drama (REED)</orgName>,
+                     <date>2020</date></p>
+               <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">Distributed
+                  under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                  (CC BY-NC-SA 4.0) licence.</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Records of Early English Drama</title>
+         </seriesStmt>
+         <sourceDesc>
+            <p>This publication constitutes a remediation of the printed REED collections - Inns of
+               Court, Ecclesiastical London, and Civic London to 1558. Information on original
+               sources for transcriptions can be accessed via the Document Descriptions. <listBibl>
+                  <biblStruct>
+                     <monogr>
+                        <title>Ecclesiastical London</title>
+                        <editor>
+                           <persName>
+                              <forename>Mary</forename>
+                              <addName>C.</addName>
+                              <surname>Erler</surname>
+                           </persName>
+                        </editor>
+                        <imprint>
+                           <publisher>University of Toronto Press and The British
+                              Library.</publisher>
+                           <date>2008</date>
+                        </imprint>
+                        <biblScope unit="page">504</biblScope>
+                        <extent>
+                           <idno type="ISBN">978-0-8020-9858-0</idno>
+                           <idno type="ISBN">978-0-7123-5024-2</idno>
+                        </extent>
+                     </monogr>
+                  </biblStruct>
+                  <biblStruct>
+                     <monogr>
+                        <title>Inns of Court</title>
+                        <editor>
+                           <persName>
+                              <forename>Alan</forename>
+                              <addName>H.</addName>
+                              <surname>Nelson</surname>
+                           </persName>
+                        </editor>
+                        <editor>
+                           <persName>
+                              <forename>John</forename>
+                              <addName>R.</addName>
+                              <surname>Elliott, Jr</surname>
+                           </persName>
+                        </editor>
+                        <imprint>
+                           <publisher>Boydell &amp; Brewer</publisher>
+                           <date>2010</date>
+                        </imprint>
+                        <biblScope unit="page" n="1174">1174</biblScope>
+                        <biblScope unit="volume">3</biblScope>
+                        <biblScope>
+                           <idno type="ISBN">978-1-84384-259-0</idno>
+                        </biblScope>
+                     </monogr>
+                  </biblStruct>
+                  <biblStruct>
+                     <monogr>
+                        <title>Civic London to 1558</title>
+                        <editor>
+                           <persName>
+                              <forename>Ann</forename>
+                              <surname>Lancashire</surname>
+                           </persName>
+                        </editor>
+                        <editor>
+                           <persName>
+                              <forename>David</forename>
+                              <addName>J.</addName>
+                              <surname>Parkinson</surname>
+                           </persName>
+                        </editor>
+                        <imprint>
+                           <publisher>Boydell &amp; Brewer</publisher>
+                           <date>2015</date>
+                        </imprint>
+                        <biblScope unit="volume">3</biblScope>
+                        <biblScope unit="page">1795</biblScope>
+                        <biblScope>
+                           <idno type="ISBN">978-1-84384-399-3</idno>
+                        </biblScope>
+                     </monogr>
+                  </biblStruct>
+               </listBibl>
+            </p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Records of Early English Drama (REED) is an international scholarly project that
+               is establishing for the first time the context from which the drama of
+               Shakespeare and his contemporaries grew. Founded in 1976, REED has worked since
+               then to locate, transcribe, and edit historical documents containing evidence of
+               drama, secular music, and other communal entertainment and ceremony from the
+               Middle Ages until 1642, when the Puritans closed the London theatres.</p>
+            <p>REED London Online is a prototype online collection developing from the Records of Early English Drama (REED) in partnership with the Canadian Writing Research Collaboratory (CWRC) and supported by Bucknell University. It aims to establish an openly accessible online scholarly and pedagogical resource of London-centric documentary, editorial, and bibliographic materials related to performance, theatre, and music spanning the period 1100-1642. With support from an NHPRC-Mellon Planning Grant for Digital Edition Publishing Cooperatives and CANARIE Research Software Program grants, REED London is creating new environments for scholarly presentation of archival materials gathered from legal, ecclesiastical, civic, political, and personal archival sources in and around London. The objective of the REED London project team is to build a stable, extensible publication environment that optimizes access to these compiled materials in ways that respond to scholars’ research interests across disciplines. Consulting with other planning grant recipients will be invaluable to ensuring that REED London’s production and publication environment is in line with standards laid out in the NHPRC-Mellon grant objectives. It is hoped that the progress REED London and CWRC make will also inform the larger dialogue about best practices among funded teams.</p>
+         </projectDesc>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="bibliography_sections">
+                  <catDesc>Bibliography Sections</catDesc>
+                  <category xml:id="ioc">
+                     <catDesc>Inns of Court</catDesc>
+                  </category>
+                  <category xml:id="eccl">
+                     <catDesc>Ecclesiastical London</catDesc>
+                  </category>    
+                  <category xml:id="civic">
+                     <catDesc>Civic London to 1558</catDesc>
+                  </category>
+               </category>
+               <category xml:id="record_types">
+                  <catDesc>Record Types</catDesc>
+                  <category xml:id="central_gvt">
+                     <catDesc>central government and royal</catDesc>
+                  </category>
+                  <category xml:id="chron_hist">
+                     <catDesc>chronicles and histories</catDesc>
+                  </category>
+                  <category xml:id="church">
+                     <catDesc>church</catDesc>
+                  </category>
+                  <category xml:id="corr_diplomatic">
+                     <catDesc>correspondence, diplomatic</catDesc>
+                  </category>
+                  <category xml:id="corr_personal">
+                     <catDesc>correspondence, personal</catDesc>
+                  </category>
+                  <category xml:id="education">
+                     <catDesc>educational institution</catDesc>
+                  </category>
+                  <category xml:id="family">
+                     <catDesc>family</catDesc>
+                  </category>
+                  <category xml:id="guild_craft">
+                     <catDesc>guild, craft/trade</catDesc>
+                  </category>
+                  <category xml:id="guild_rel">
+                     <catDesc>guild, religious</catDesc>
+                  </category>
+                  <category xml:id="legal">
+                     <catDesc>legal</catDesc>
+                  </category>
+                  <category xml:id="local_gvt">
+                     <catDesc>local government</catDesc>
+                  </category>
+                  <category xml:id="manor">
+                     <catDesc>manorial</catDesc>
+                  </category>
+                  <category xml:id="rel_community">
+                     <catDesc>religious community</catDesc>
+                  </category>
+               </category>
+               
+               <category xml:id="repositories">
+                  <catDesc>Repositories</catDesc>
+                  <category xml:id="all-hallows-tower">
+                     <catDesc>All Hallows by the Tower Muniments Room</catDesc>
+                  </category>
+                  <category xml:id="AGS">
+                     <catDesc>
+                        <choice>
+                           <abbr>AGS</abbr>
+                           <expan>Archivo General de Simancas</expan>
+                        </choice>
+                     </catDesc>
+                  </category>
+                  <category xml:id="archivo-segreto-vaticano">
+                     <catDesc>Archivo Segreto Vaticano</catDesc>
+                  </category>
+                  <category xml:id="archivo-stato">
+                     <catDesc>Archivio di Stato</catDesc>
+                  </category>
+                  <category xml:id="barber-surgeons-hall">
+                     <catDesc>Barber-Surgeons' Hall</catDesc>
+                  </category>
+                  <category xml:id="BL">
+                     <catDesc>
+                        <choice>
+                           <abbr>BL</abbr>
+                           <expan>British Library</expan>
+                        </choice>
+                     </catDesc>
+                  </category>
+                  <category xml:id="Bodl.">
+                     <catDesc>
+                        <choice>
+                           <abbr>Bodl.</abbr>
+                           <expan>Bodleian</expan>
+                        </choice>
+                     </catDesc>
+                  </category>
+                  <category xml:id="clothworkers-hall">
+                     <catDesc>Clothworkers' Hall</catDesc>
+                  </category>
+                  <category xml:id="CUL">
+                     <catDesc>
+                        <choice>
+                           <abbr>CUL</abbr>
+                           <expan>Cambridge University Library</expan>
+                        </choice>
+                     </catDesc>
+                  </category>
+                  <category xml:id="derbyshire-record-office">
+                     <catDesc>Derbyshire Record Office</catDesc>
+                  </category>
+                  <category xml:id="dorset-history-centre">
+                     <catDesc>Dorset History Centre</catDesc>
+                  </category>
+                  <category xml:id="drapers-hall">
+                     <catDesc>Drapers' Hall</catDesc>
+                  </category>
+                  <category xml:id="folger-shakespeare-library">
+                     <catDesc>Folger Shakespeare Library</catDesc>
+                  </category>
+                  <category xml:id="goldsmiths-hall">
+                     <catDesc>Goldsmiths' Hall</catDesc>
+                  </category>
+                  <category xml:id="gonville-caius-library">
+                     <catDesc>Gonville and Caius College Library (Cambridge)</catDesc>
+                  </category>
+                  <category xml:id="GI-Arch">
+                     <catDesc>
+                        <choice>
+                           <abbr>GI Arch</abbr>
+                           <expan>Gray's Inn Archives</expan>
+                        </choice>
+                     </catDesc>
+                  </category>
+                  <category xml:id="GL">
+                     <catDesc>
+                        <choice>
+                           <abbr>GL</abbr>
+                           <expan>Guildhall Library</expan>
+                        </choice>
+                     </catDesc>
+                  </category>
+                  <category xml:id="hatfield-house-library">
+                     <catDesc>Hatfield House Library</catDesc>
+                  </category>
+                  <category xml:id="IT-Arch">
+                     <catDesc>
+                        <choice>
+                           <abbr>IT Arch</abbr>
+                           <expan>Inner Temple Archives</expan>
+                        </choice>
+                     </catDesc>
+                  </category>
+                  <category xml:id="IT-Lib">
+                     <catDesc>
+                        <choice>
+                           <abbr>IT Lib</abbr>
+                           <expan>Inner Temple Library</expan>
+                        </choice>
+                     </catDesc>
+                  </category>
+                  <category xml:id="lambeth-palace-library">
+                     <catDesc>Lambeth Palace Library</catDesc>
+                  </category>
+                  <category xml:id="leathersellers-hall">
+                     <catDesc>Leathersellers' Hall</catDesc>
+                  </category>
+                  <category xml:id="lincoln-cathedral-library">
+                     <catDesc>Lincoln Cathedral Library</catDesc>
+                  </category>
+                  <category xml:id="LI-Arch">
+                     <catDesc>
+                        <choice>
+                           <abbr>LI Arch</abbr>
+                           <expan>Lincoln's Inn Archives</expan>
+                        </choice>
+                     </catDesc>
+                  </category>
+                  <category xml:id="LI-Lib">
+                     <catDesc>
+                        <choice>
+                           <abbr>LI Lib</abbr>
+                           <expan>Lincoln's Inn Library</expan>
+                        </choice>
+                     </catDesc>
+                  </category>
+                  <category xml:id="london-metropolitan-archives">
+                     <catDesc>London Metropolitan Archives</catDesc>
+                  </category>
+                  <category xml:id="longleat-house">
+                     <catDesc>Longleat House</catDesc>
+                  </category>
+                  <category xml:id="mercers-hall">
+                     <catDesc>Mercers' Hall</catDesc>
+                  </category>
+                  <category xml:id="MT-Arch">
+                     <catDesc>
+                        <choice>
+                           <abbr>MT Arch</abbr>
+                           <expan>Middle Temple Archives</expan>
+                        </choice>
+                     </catDesc>
+                  </category>
+                  <category xml:id="MT-Lib">
+                     <catDesc>
+                        <choice>
+                           <abbr>MT Lib</abbr> 
+                           <expan>Middle Temple Library</expan>
+                        </choice>
+                     </catDesc>
+                  </category>
+                  <category xml:id="parliamentary-archives">
+                     <catDesc>Parliamentary Archives</catDesc>
+                  </category>
+                  <category xml:id="rousham-house">
+                     <catDesc>Rousham House</catDesc>
+                  </category>
+                  <category xml:id="st-bartholomews-hospital-archives">
+                     <catDesc>St Bartholomew's Hospital Archives</catDesc>
+                  </category>
+                  <category xml:id="st-james-palace">
+                     <catDesc>St James Palace</catDesc>
+                  </category>
+                  <category xml:id="st-johns-college-library">
+                     <catDesc>St John's College Library (Cambridge)</catDesc>
+                  </category>
+                  <category xml:id="stationers-hall">
+                     <catDesc>Stationers' Hall</catDesc>
+                  </category>
+                  <category xml:id="TNA">
+                     <catDesc>
+                        <choice>
+                           <abbr>TNA</abbr>
+                           <expan>The National Archives</expan>
+                        </choice>
+                     </catDesc>
+                  </category>
+                  <category xml:id="trinity-college-library">
+                     <catDesc>Trinity College Library (Cambridge)</catDesc>
+                  </category>
+                  <category xml:id="york-city-archives">
+                     <catDesc>York City Archives</catDesc>
+                  </category>
+               </category>
+               <category xml:id="short_title_catalogues">
+                  <catDesc>Short-Title Catalogues</catDesc>
+                  <category xml:id="STC">
+                     <catDesc>
+                        <choice>
+                           <abbr>STC</abbr>
+                           <expan>Pollard and Redgrave (eds), Short-Title Catalogue</expan>
+                        </choice>
+                     </catDesc>
+                  </category>
+                  <category xml:id="Wing">
+                     <catDesc>
+                        <choice>
+                           <abbr>Wing</abbr>
+                           <expan>Wing, Short-Title</expan>
+                        </choice>
+                     </catDesc>
+                  </category>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="la">Latin</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2020-07-23" who="#CB">Added repositories and abbreviations to TEI header for Archivo General de Simancas, GI Arch, IT Arch, IT Lib, LI Arch, LI Lib, MT Arch, and MT Lib</change>
+         <change when="2020-07-23" who="#CB">Replaced current REED editorial staff section in TEI header with names of staff responsible for three London collections</change>
+         <change when="2020-02-15" who="#JAKA1">Updated master TEI header to refer to ongoing funding for REED London Online and to recognize repositories and record types as project expands.</change>
+      </revisionDesc>
+   </teiHeader>
+   <text type="essay">
+      <body>
+         <head>
+         	<title>Historical Background, by Mary C. Erler</title>
+         </head>
+         <div type="section">
+            <div>
+               <head>
+                  <supplied>Cathedral and Diocese</supplied>
+               </head>
+            	<p>Although there is some evidence, archaeological and historical, for Christianity in London in the fourth century (Restitutus, bishop of London, attended the council of Arles in 314), the visible history of the church in London really begins with the establishment in 604 of St Paul’s Cathedral, probably on one of the two low hills where the Romans built this city.(1) St Augustine’s mission had landed in 597, commanded by Pope Gregory to establish sees at London and York, and seven years later Æthelberht of Kent built the cathedral for London’s bishop, Mellitus, the friend of Augustine. Æthelberht’s death brought a reversion to paganism and Mellitus’ exile however, and the see of London was not re-established until late in the century by St Erkenwald (acceded 675), called St Paul’s second founder, whose relics in the Middle Ages were the cathedral’s greatest treasure.(2)</p>
+            	<p>In the ninth century the Viking attacks of 842, 851, and 871, and the occupation of London, must have had an effect on religious life in the capital but the evidence is scarce. The lives of the great bishops of the tenth century, however – Theodred (acceded between 909 and 926) and Dunstan (between 957 and 959) – provide more evidence. Dunstan in particular is associated with monastic reform and specifically with the reform of the Westminster community. His successor Ælfstan (between 959 and 964) was responsible for rebuilding St Paul’s within a year, after a great fire in 962, the first of many that were to mark its history.(3)</p>
+            	<p>Edward the Confessor’s transfer of the royal capital from Winchester’s Old Minster to London’s Westminster contributed to the importance of St Paul’s and of its bishop. Edward appointed the first two Norman bishops of London, Robert of Jumièges (1044) and William (between 1051 and 1075), the latter subsequently regarded as instrumental in the royal grant of a charter to London and for this reason commemorated in a mayoral procession to St Paul’s as late as the seventeenth century.(4)</p>
+            	<p>The second of the cathedral’s three great fires, in 1087, produced a significant rebuilding of the cathedral begun by Bishop Maurice. It was perhaps largely finished by 1175, dedicated in 1240, and finally completed in the 1320s.(5) Bishop of London Gilbert Foliot’s claim, in 1169, to metropolitan status for himself and London, and his refusal of subordination to the arch- bishop or church of Canterbury, must have been to some extent connected with the growing physical pre-eminence of the cathedral and perhaps also with the translation to it of St Erkenwald’s relics, which had taken place in 1148.(6) (The saint’s two feasts were re-established by Bishop Robert Braybrooke in 1386 and the alliterative poem on the saint’s life may have been composed at that time.)</p>
+            	<p>Writing of the late twelfth century, Keene notes, ‘The bulk of the church ... rose well above the city walls and all houses in the city, while its elegant and sumptuous spire, perhaps the tallest in Europe, rose higher than any building in London before 1964.’(7) The cathedral’s physical fabric has regularly risen and fallen: besides the fires of 962 and 1087 already mentioned, there were conflagrations in 1136 and in 1445, after which the spire was not repaired until 1462, when a copper and gilt weathercock, originally erected in 1421, was replaced. The third great fire occurred in 1561 when the 500' spire was struck by lightning: ‘a smoke was espied.... But sodeinly after, as it wer in a momente, the flame brake furth in a circle like a garlande ... within a quarter of an howre ... the crosse &amp; the Egle on the toppe fell downe vpon the south crosse Ile.’(8) The subsequent collection of funds, like the national collection begun seventy years later in 1631 to respond to general decay of the building, was controversial, since from Elizabeth’s accession onward the form of the building, even its existence, was strongly tied to approval or disapproval of differing religious positions.</p>
+            	<p>From the twelfth century St Paul’s central role in London spectacle was established, not only in religious procession within the cathedral and its precinct, but in the secular space to the north, in Cheapside, which became the principal section of the route for royal entries and for reception of visitors from abroad. At least by the early fifteenth century, besides the mayoral election procession on 28 October there were seven other days, all in winter, when the mayor, aldermen, and guilds ceremonially attended St Paul’s, while the days after Pentecost were filled with long-established archidiaconal processions. The symbolic closeness, even identity, of civic and religious authority is shown by the ceremonial on six special feasts when mayor and aldermen heard vespers at St Paul’s, standing in ranked order along the choir, the mayor next to the dean’s stall.(9)</p>
+            	<p>The cathedral served both city and kingdom and its importance not only in civic but in national life was underlined by the celebration of royal victories (Henry  after Stoke), royal marriages (Henry  and Katherine of Aragon), and royal political alliances (James  and Christian of Denmark) which took place within its walls. As the cathedral provided the great stage for these moments of national affirmation, so too it was the venue for the display of clashing religious beliefs, particularly after the death of Henry  when for the rest of the century the entire kingdom struggled with the violent realities of religious change. Especially relevant were the conflicts centred on St Paul’s liturgical observance, an important index to the country’s theological shifts. At the cathedral the simplifying of religious observance under Edward, the reinstitution of traditional ceremony under Mary (including the feast of St Erkenwald), the Elizabethan completion of the Reformation, and the Laudian liturgical reform reflected in condensed form the events taking place in the country at large. That convocation met regularly at St Paul’s meant that these visual statements were regularly accompanied by theological ones.(10) It was the 1563 convocation of the southern province whose first session met at St Paul’s for instance, which produced the doctrinal consensus embodied in the Thirty- Nine Articles.</p>
+            	<p>Though the cathedral and its precinct were important civic spaces, they were famously disorderly ones where commercial, legal, and personal business was conducted with all of its inherent possibilities for conflict. Because the north and south walls were pierced by opposite doors, about the middle of the nave, a shortcut might be taken through the centre of the cathedral, called ‘Paul’s Walk.’ In 1562/3 Bishop James Pilkington of Durham, wrote, ‘The south alley for vsurye and Poperye, the north for Simony, and the Horse faire in the middest for all kind of bargains, metinges, brawlinges, murthers, conspiracies, and the font for ordin- ary paimentes of money are so well knowen to all menne as the begger knowes his dishe.’(11) Bishop Braybrooke’s 1385 attempt to regulate behaviour in St Paul’s is the earliest of many such injunctions.(12)</p>
+            	<p>Not only the cathedral building itself but the enclosing precinct provided the stage for activity liturgical, political, and sometimes simply dramatic. The precinct’s walls, gates, and to some extent buildings seem to have been largely in place by the twelfth century.(13) Sparrow Simpson asks how many people resided in the precinct and a recent assessment suggests it might have housed as many as 300, a number equivalent to the communicants in ‘a middle- sized city parish.’(14) The precinct was the locale for many of the dramatic occurrences presented in this volume: for instance the plays in the almoner’s house under Sebastian Westcote (attend- ance at which required negotiation of at least one, perhaps two, gates), the boy bishop’s visits to clerical houses, and the spectacles and sermons offered at Paul’s Cross (see Figure 1, p xxxix). The cathedral precinct, sheltering its important cross and pulpit, thus offered the same model of churchyard with a cross found on a smaller scale in many London parishes.</p>
+            	<p>Located in the northeast corner, near the site of the ancient folkmoot, the cross was first mentioned in 1216. Its enclosing structure was shown by nineteenth-century excavations to have been 37' across.(15) The much-reproduced Gipkyn diptych (c 1620) shows various modes of audience response to this especially important public space, the site of public penance (including that of the cross-dressing Mary Frith, see pp 208–9), abjurations (John Purvey in 1401), book burnings (repeatedly), even executions (after Wyatt’s rebellion and the Gunpowder Plot), as well as the popular sermons whose theological messages varied so widely.(16) It was also the venue for several influential attacks on the stage made in the last quarter of the sixteenth century.(17) Sermons were not preached at Paul’s Cross after 1633 though the cross lasted for ten years more.</p>
+            </div>
+            
+            <div type="section">
+               <head>
+                  <supplied>Parishes</supplied>
+               </head>
+            	<p>The remarkable number of London parishes has been universally noticed. William Fitzstephen, writing in the 1170s at the end of the period during which the parishes were taking shape, says London and its suburbs had thirteen greater conventual churches and 126 lesser parochial churches, and Christopher Brooke judges that before 1250 this ‘seems to have been the record in Western Christendom.’(18) The familiar line of development from minster to parish, beginning in the Anglo-Saxon period and largely completed by 1200, has been traced in London by Brooke, who notes the early existence of St Gregory’s and St Faith’s parishes as probable off- shoots of St Paul’s. (St Faith’s dedication comes perhaps from the ninth century.)(19) Brooke also observes the early appearance of parishes in the northwest, with the extramural churches of St Andrew Holborn, recorded in a mid-tenth-century charter, and St Bride’s, built on an ancient Roman cemetery possibly in the tenth or eleventh century.(20)</p>
+            	<p>Focusing on eastern London Jeremy Haslam has posited a slightly different pattern of evolution: an intentional creation of ‘new minsters’ in the restoration of London after the ninth- century Viking raids, of which the first and oldest would be All Hallows Barking, ‘covering much if not most of the eastern part of the City.’(21)</p>
+            	<p>Founded mostly between the tenth and twelfth centuries, with a ‘proliferation of tiny parishes’ in the eleventh century, the roster of London parishes was largely complete by around 1200. As in other English cities these many small parishes were served by small churches, though the four churches of the friars offered large interiors. Parish boundaries did not follow those of the wards, being often determined by ownership of land, and Brooke concludes that ‘we must be looking at the outlines of the tenements and messuages of groups of neighbours who formed the early parishes.’(22)</p>
+            	<p></p>
+            </div>
+         </div>
+         
+         
+      </body>
+   </text>
+</TEI>

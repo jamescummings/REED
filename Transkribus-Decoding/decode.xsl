@@ -126,11 +126,15 @@
         <xsl:analyze-string select="." regex="{$search}">
             <xsl:matching-substring><ex n="{$search}"><xsl:value-of select="$replace"/></ex></xsl:matching-substring>
             <xsl:non-matching-substring><xsl:value-of select="."/></xsl:non-matching-substring>
-        </xsl:analyze-string>
+        </xsl:analyze-string> 
       
     </xsl:template>
     
-    <!-- Have <ex> inside replaceStrings mode only have the character value -->
-<xsl:template match="ex" mode="replaceStrings"><ex n="{@n}"><xsl:value-of select="."/></ex></xsl:template>
+    <!-- Have <ex> inside replaceStrings mode only have the character value
+<xsl:template match="ex" mode="replaceStrings">
+    <ex n="{@n}"><xsl:value-of select="."/></ex>
+</xsl:template>-->
+
+    
 
 </xsl:stylesheet>
