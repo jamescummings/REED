@@ -335,16 +335,16 @@
               </attDef>
               <attDef ident="cert" mode="change">
                 <valList mode="add" type="closed">
-                  <valItem ident="definite">
+                  <valItem ident="high">
                     <desc>There is a high degree of certainty about this date</desc>
                   </valItem>
-                  <valItem ident="reasonably certain">
-                    <desc>There is a moderate degree of certainty about this date</desc>
+                  <valItem ident="medium">
+                    <desc>There is a medium degree of certainty about this date</desc>
                   </valItem>
-                  <valItem ident="probable">
+                  <valItem ident="low">
                     <desc>There is a low degree of certainty about this date</desc>
                   </valItem>
-                  <valItem ident="speculative">
+                  <valItem ident="unknown">
                     <desc>The date is unknown</desc>
                   </valItem>
                 </valList>
@@ -765,7 +765,7 @@
           <!-- delete att.msExcerpt -->
           <classSpec ident="att.msExcerpt" module="msdescription" type="atts" mode="delete"/>
           
-          <!-- namesdates: only include orgName, persName, placeName, occupation, and settlement. Not doing metadata records for named entities...yet-->
+          <!-- namesdates: only include orgName, persName, placeName, objectName, occupation, and settlement. Not doing metadata records for named entities...yet-->
           <moduleRef key="namesdates"
           	include="orgName persName place placeName settlement occupation forename surname genName addName name objectName"/>
           
@@ -870,7 +870,26 @@
               <attDef ident="source" mode="delete"/>
               </attList>
           </elementSpec>
-             
+          
+             <!-- adding objectName type values -->
+          <elementSpec ident="objectName" mode="change" module="namesdates">
+            <attList>
+              <attDef ident="type" mode="change">
+                <valList mode="add" type="closed">
+                  <valItem ident="cloth"/>
+                  <valItem ident="animal_supplies"/>
+                  <valItem ident="animal"/>
+                  <valItem ident="transportation"/>
+                  <valItem ident="food"/>
+                 <valItem ident="costume"/>
+                  <valItem ident="fuel"/>
+                  <valItem ident="torch"/>
+                  <valItem ident="instrument"/>
+                  <valItem ident="other"/>
+                </valList>
+              </attDef>
+            </attList>
+          </elementSpec>
           
           <!-- delete lots of attributes -->
           <elementSpec ident="settlement" mode="change" module="namesdates">
