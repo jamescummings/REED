@@ -1,0 +1,62 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 		schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Temple Garden</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Canadian Writing Research Collaboratory (CWRC)</publisher>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/legalcode">
+            <p/>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>Place entity record</note>
+      </notesStmt>
+      <sourceDesc>
+        <p>born digital</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <listPlace>
+        <place type="http://id.lincsproject.ca/eml/Garden">
+          <placeName type="standard">
+            <name>Temple Garden</name>
+          </placeName>
+          <placeName type="preferred" xml:lang="eng">
+            <name type="full">Temple Garden</name>
+          </placeName>
+          <location>
+            <address>
+              <country ref="ISO 3166-1">GBR</country>
+              <region />
+            </address>
+            <geo decls="#WGS">51.511694 0.110818</geo>
+          </location>
+          <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q26317787</idno>
+          <note type="resp_statement">
+            <respons locus="value">
+              <desc>
+                <date type="modified" source="https://www.w3.org/TR/NOTE-datetime" when="2020-08-11"/>
+                <persName ref="https://cwrc.ca/users/3345">Carolyn Black</persName>
+              </desc>
+            </respons>
+          </note>
+          <note type="resp_statement">
+            <respons locus="value">
+              <desc>
+                <date type="modified" source="https://www.w3.org/TR/NOTE-datetime" when="2023-02-25"/>
+                <persName ref="https://cwrc.ca/user/2558">Diane Jakacki</persName>
+              </desc>
+            </respons>
+          </note>
+        </place>
+      </listPlace>
+    </body>
+  </text>
+</TEI>

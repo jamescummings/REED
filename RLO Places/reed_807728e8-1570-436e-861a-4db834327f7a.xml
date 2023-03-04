@@ -1,0 +1,55 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?> <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" 		schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Grub Street</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Canadian Writing Research Collaboratory (CWRC)</publisher>
+        <publisher>Records of Early English Drama - London</publisher>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/legalcode">
+            <p/>
+          </licence>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>Place entity record</note>
+      </notesStmt>
+      <sourceDesc>
+        <p>born digital</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <listPlace>
+        <place type="http://id.lincsproject.ca/eml/Street">
+          <placeName type="standard">
+            <name>Grub Street</name>
+          </placeName>
+          <placeName type="preferred" xml:lang="ENG">
+            <name type="full">Grub Street</name>
+          </placeName>
+          <location>
+            <address>
+              <country ref="ISO 3166-1">GBR</country>
+              <region/>
+            </address>
+            <geo decls="#WGS">51.454663 -0.167047</geo>
+          </location>
+          <idno type="custom">https://mapoflondon.uvic.ca/GRUB1</idno>
+          <note type="resp_statement">
+            <respons locus="value">
+              <desc>
+                <date type="modified" source="https://www.w3.org/TR/NOTE-datetime" when="2023-02-12"/>
+                <persName ref="https://cwrc.ca/user/2558">Diane Jakacki</persName>
+              </desc>
+            </respons>
+          </note>
+        </place>
+      </listPlace>
+    </body>
+  </text>
+</TEI>
