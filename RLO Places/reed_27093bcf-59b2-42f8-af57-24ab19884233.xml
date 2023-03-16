@@ -42,7 +42,7 @@
             <geo decls="#WGS">51.51211382 -0.09972017696</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q1233915</idno>
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/DOCT1.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/DOCT1</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

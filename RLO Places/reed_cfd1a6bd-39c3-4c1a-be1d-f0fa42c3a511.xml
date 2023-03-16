@@ -46,7 +46,7 @@
             <geo decls="#WGS">51.51854893 -0.109710862</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q5509689</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/FURN1.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/FURN1</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

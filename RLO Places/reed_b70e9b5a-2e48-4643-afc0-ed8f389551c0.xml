@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.51921942 -0.1000012545</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q18160760</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/LONG3.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/LONG3</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

@@ -41,7 +41,7 @@
             <geo decls="#WGS">51.521868 -0.108931</geo>
           </location>
           <idno type="Wikidata" cert="medium">https://www.wikidata.org/wiki/Q5682158</idno>
-          <idno type="custom" cert="medium">https://mapoflondon.uvic.ca/HATT1.htm</idno>
+          <idno type="custom" cert="medium">https://mapoflondon.uvic.ca/HATT1</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

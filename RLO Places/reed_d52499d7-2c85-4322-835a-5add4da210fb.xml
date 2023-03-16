@@ -41,7 +41,7 @@
             </address>
             <geo decls="#WGS">51.51367215 -0.1091786155</geo>
           </location>          
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/RAMA1.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/RAMA1</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

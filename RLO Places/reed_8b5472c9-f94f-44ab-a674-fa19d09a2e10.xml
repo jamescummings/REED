@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.523659 -0.095437293</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q17379884</idno>
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/GOLD1.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/GOLD1</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

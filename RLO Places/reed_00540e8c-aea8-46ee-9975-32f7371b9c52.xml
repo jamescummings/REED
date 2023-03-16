@@ -39,7 +39,7 @@
             </address>
             <geo decls="#WGS">51.50685268 -0.09439368</geo>
           </location>
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/GLOB1.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/GLOB1</idno>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q272434</idno>
           <note type="resp_statement">
             <respons locus="value">

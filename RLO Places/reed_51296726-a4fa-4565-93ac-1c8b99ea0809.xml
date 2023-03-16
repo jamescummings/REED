@@ -39,7 +39,7 @@
             <geo decls="#WGS">51.46071374 -0.309674244</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q1059945</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/SHEE1.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/SHEE1</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

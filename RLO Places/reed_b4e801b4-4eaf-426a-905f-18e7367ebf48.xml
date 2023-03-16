@@ -43,7 +43,7 @@
             <geo decls="#WGS">51.51112395 -0.04279405019</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q6819863</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/MERM1.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/MERM1</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

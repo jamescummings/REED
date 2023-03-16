@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.504586 -0.137827</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q272162</idno>
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/JAME5.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/JAME5</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

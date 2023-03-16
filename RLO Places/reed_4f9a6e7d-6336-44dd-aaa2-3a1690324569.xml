@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.52456412 -0.08-0.079824751</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q2632228</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/THEA2.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/THEA2</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

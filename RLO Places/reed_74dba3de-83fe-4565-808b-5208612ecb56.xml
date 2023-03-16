@@ -43,7 +43,7 @@
             <geo decls="#WGS">51.51378954 -0.126091945</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q5600093</idno>
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/TOWE3.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/TOWE3</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

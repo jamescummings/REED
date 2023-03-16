@@ -43,7 +43,7 @@
             <geo decls="#WGS">51.51363953 -0.1119226948</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q1256932</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/TEMP1.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/TEMP1</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

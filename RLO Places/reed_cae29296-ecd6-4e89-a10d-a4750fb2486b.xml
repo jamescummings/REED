@@ -43,7 +43,7 @@
             <geo decls="#WGS">51.51385048 -0.1155538668</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q26714046</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/CLEM1.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/CLEM1</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

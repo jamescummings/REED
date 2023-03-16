@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.520101 -0.137959</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q19186</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/MIDD30.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/MIDD30</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

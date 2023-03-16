@@ -44,7 +44,7 @@
             <geo decls="#WGS">51.50687036	-0.091220713</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q203035</idno>
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/WINC1.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/WINC1</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

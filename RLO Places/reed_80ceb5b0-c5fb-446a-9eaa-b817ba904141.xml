@@ -39,7 +39,7 @@
             </address>
             <geo decls="#WGS">51.51450882 -0.090208063</geo>
           </location>
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/GROC1.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/GROC1</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

@@ -42,7 +42,7 @@
             <geo decls="#WGS">51.51832528 -0.101188782</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q3182018</idno>
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/SMIT1.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/SMIT1</idno>
           <idno type="custom" cert="high">https://ereed.library.utoronto.ca/eats/entity/38221/</idno>
           <note type="resp_statement">
             <respons locus="value">

@@ -46,7 +46,7 @@
             <geo decls="#WGS">51.51400761 -0.1099173523</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q846686</idno>
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/FLEE6.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/FLEE6</idno>
           <idno type="custom" cert="high">https://ereed.library.utoronto.ca/eats/entity/226563/</idno>
           <note type="resp_statement">
             <respons locus="value">

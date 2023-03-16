@@ -39,7 +39,7 @@
             </address>
             <geo decls="#WGS">51.51928836 -0.1265887794</geo>
           </location>
-          <idno type="custom" cert="medium">https://mapoflondon.uvic.ca/MONT20.htm</idno>
+          <idno type="custom" cert="medium">https://mapoflondon.uvic.ca/MONT20</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

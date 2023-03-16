@@ -70,7 +70,7 @@
             <geo decls="#WGS">51.51691255 -0.1138929826</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q69482</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/LINC2.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/LINC2</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.488687 -0.096189</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q7595163</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/STPA6.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/STPA6</idno>
           <idno type="custom">https://ereed.library.utoronto.ca/eats/entity/227076/</idno>
         </place>
       </listPlace>

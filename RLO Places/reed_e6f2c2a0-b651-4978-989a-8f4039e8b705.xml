@@ -37,7 +37,7 @@
             <geo decls="#WGS">51.51871824 -0.097111351</geo>
           </location>          
           <idno type="wikidata" cert="high">http://www.wikidata.org/entity/Q64008611</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/ALDE4.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/ALDE4</idno>
           <idno type="custom">https://ereed.library.utoronto.ca/eats/entity/229509/</idno>
           <note type="resp_statement">
             <respons locus="value">

@@ -43,7 +43,7 @@
             <geo decls="#WGS">51.5114 -0.119</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q756819</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/STRA9.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/STRA9</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

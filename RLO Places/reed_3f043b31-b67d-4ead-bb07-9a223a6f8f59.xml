@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.51635072 -0.081492755</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q19399894</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/BISH3.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/BISH3</idno>
           <idno type="custom">https://ereed.library.utoronto.ca/eats/entity/232340/</idno>
           <note type="resp_statement">
             <respons locus="value">

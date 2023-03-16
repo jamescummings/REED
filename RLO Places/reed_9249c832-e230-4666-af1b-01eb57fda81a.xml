@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.515313 -0.12838</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q16247922</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/STGI102.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/STGI102</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

@@ -43,7 +43,7 @@
             <geo decls="#WGS">51.512141 -0.084963</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q5591440</idno>
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/GRAC1.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/GRAC1</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

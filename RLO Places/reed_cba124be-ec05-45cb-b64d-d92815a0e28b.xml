@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.523056 -0.079722</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q2631360</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/CURT2.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/CURT2</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

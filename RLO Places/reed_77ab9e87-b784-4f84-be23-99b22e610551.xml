@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.50456 -0.12593</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q642039</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/BANQ1.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/BANQ1</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.50122029 -0.1117595325</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q6481451</idno>
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/LAMB3.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/LAMB3</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

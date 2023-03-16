@@ -52,7 +52,7 @@
             <geo decls="#WGS">51.52360555 -0.09541693482</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q157412</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/GRAY1.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/GRAY1</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

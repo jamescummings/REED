@@ -39,7 +39,7 @@
             <geo decls="#WGS">51.513 -0.119</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q15243205</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/LYON2.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/LYON2</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

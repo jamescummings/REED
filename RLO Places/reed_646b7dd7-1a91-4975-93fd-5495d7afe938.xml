@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.507103 -0.09538</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q1120943</idno>
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/ROSE6.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/ROSE6</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

@@ -43,7 +43,7 @@
             <geo decls="#WGS">51.517506 -0.111208</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q26713978</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/STAP2.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/STAP2</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

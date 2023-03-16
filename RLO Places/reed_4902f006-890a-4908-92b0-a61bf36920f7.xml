@@ -42,7 +42,7 @@
             <geo decls="#WGS">51.51613101 -0.101573476</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q968975</idno>
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/NEWG1.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/NEWG1</idno>
           <idno type="custom">https://ereed.library.utoronto.ca/eats/entity/234528/</idno>
           <note type="resp_statement">
             <respons locus="value">

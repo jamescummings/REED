@@ -46,7 +46,7 @@
             <geo decls="#WGS">51.510853 -0.120853</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q26713883</idno>
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/STRA7.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/STRA7</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

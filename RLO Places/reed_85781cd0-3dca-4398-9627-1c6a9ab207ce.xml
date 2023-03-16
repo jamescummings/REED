@@ -39,7 +39,7 @@
             <geo decls="#WGS">51.49991939 -0.125446958</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q62408</idno>
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/WEST2.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/WEST2</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

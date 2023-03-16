@@ -39,7 +39,7 @@
             </address>
             <geo decls="#WGS">51.51241647 -0.098199801</geo>
           </location>
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/OLDF1.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/OLDF1</idno>
           <idno type="custom" cert="high">https://ereed.library.utoronto.ca/eats/entity/229376/</idno>
           <note type="resp_statement">
             <respons locus="value">

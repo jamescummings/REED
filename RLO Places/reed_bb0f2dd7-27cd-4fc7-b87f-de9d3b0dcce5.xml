@@ -45,7 +45,7 @@
             <geo decls="#WGS">51.5135979 -0.107833543</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q7995931</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/WHIT4.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/WHIT4</idno>
           <idno type="custom">https://ereed.library.utoronto.ca/eats/entity/226886/</idno>
           <note type="resp_statement">
             <respons locus="value">

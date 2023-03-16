@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.51708997 -0.109547782</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q4861410</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/BARN1.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/BARN1</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

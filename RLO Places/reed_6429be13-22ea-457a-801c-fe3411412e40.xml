@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.525066 -0.07995</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q15224752</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/HOLY7.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/HOLY7</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.50262916 -0.09099495847</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q2603875</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/MARS5.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/MARS5</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

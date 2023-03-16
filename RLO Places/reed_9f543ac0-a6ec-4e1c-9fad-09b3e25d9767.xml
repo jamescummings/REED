@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.51286349 -0.110569384</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q1233784</idno>
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/INNE1.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/INNE1</idno>
           <idno type="custom" cert="high">https://ereed.library.utoronto.ca/eats/entity/228007/</idno>
           <note type="resp_statement">
             <respons locus="value">

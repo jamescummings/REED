@@ -37,7 +37,7 @@
             <geo decls="#WGS">51.513571 -0.07664669</geo>
           </location>
           <idno type="wikidata" cert="high">http://www.wikidata.org/entity/Q28846021</idno>
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/ALDG1.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/ALDG1</idno>
           <idno type="custom" cert="high">https://ereed.library.utoronto.ca/eats/entity/229490/</idno>
           <note type="resp_statement">
             <respons locus="value">

@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.51334542 -0.08540493431</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q1782039</idno>
-          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/CORN2.htm</idno>
+          <idno type="custom" cert="high">https://mapoflondon.uvic.ca/CORN2</idno>
           <idno type="custom" cert="high">https://ereed.library.utoronto.ca/eats/entity/232359/</idno>
           <note type="resp_statement">
             <respons locus="value">

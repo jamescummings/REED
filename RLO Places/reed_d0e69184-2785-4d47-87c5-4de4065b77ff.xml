@@ -39,7 +39,7 @@
             <geo decls="#WGS">51.51599 -0.111922</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q404351</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/CHAN1.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/CHAN1</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.522924 -0.092811</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q18163169</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/WHIT3.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/WHIT3</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

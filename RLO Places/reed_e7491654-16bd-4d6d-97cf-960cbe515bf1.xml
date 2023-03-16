@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.50381577 -0.06426694508</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q124046</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/ALDE1.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/ALDE1</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>

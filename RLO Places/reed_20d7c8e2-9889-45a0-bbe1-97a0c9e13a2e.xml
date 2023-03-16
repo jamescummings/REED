@@ -40,7 +40,7 @@
             <geo decls="#WGS">51.52311747 -0.077599467</geo>
           </location>
           <idno type="WikiData" cert="high">https://www.wikidata.org/wiki/Q1027127</idno>
-          <idno type="custom">https://mapoflondon.uvic.ca/SEWE1.htm</idno>
+          <idno type="custom">https://mapoflondon.uvic.ca/SEWE1</idno>
           <note type="resp_statement">
             <respons locus="value">
               <desc>
