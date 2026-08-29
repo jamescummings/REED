@@ -19,15 +19,15 @@
             </authority>
             <date when="2026-08-29"/>
             <availability>
-               <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY
+                                4.0</licence>
             </availability>
          </publicationStmt>
          <sourceDesc>
             <p>Automatically extracted from the abbreviated word-forms found in the
                             transcription of 10 REED source
-                            document(s), listed below by their declared title (falling back to
-                            the file's URI if no title could be found).
-                        <listBibl>
+                            document(s), listed below by their declared title (falling back to the
+                            file's URI if no title could be found). <listBibl>
                   <bibl>Cambridgeshire</bibl>
                   <bibl>Yorkshire North Riding</bibl>
                   <bibl>Bear Gardens/Hope Playhouse</bibl>
@@ -44,12 +44,12 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Word forms are drawn only from div[type="transcription"] elements in
-                            each source document.</p>
+            <p>Word forms are drawn only from div[type="transcription"] elements in each
+                            source document.</p>
             <p>By default, content inside note[type="foot"] (editorial footnotes) is
                             excluded, since footnotes contain modern editorial commentary rather
                             than transcribed text; this run was generated with
-                            include-editorial-notes=false.</p>
+                                include-editorial-notes=false.</p>
             <p>A word is included in this list if it contains at least one ex element,
                             i.e. at least one letter or letters editorially supplied to expand a
                             scribal abbreviation. Runs of word-characters joined by a single
@@ -58,11 +58,11 @@
             <p>Entries whose only attestations occur inside a supplied element (i.e.
                             text editorially supplied where none survives, rather than merely
                             abbreviated) are marked cert="low" on the entry.</p>
-            <p>Distinct entries are determined by the exact shape of the word,
-                            i.e. by both its letters and the position(s) of the editorially
-                            supplied portion(s); two words that look identical once expanded but
-                            differ in what was actually written by the scribe are listed as
-                            separate entries.</p>
+            <p>Distinct entries are determined by the exact shape of the word, i.e. by
+                            both its letters and the position(s) of the editorially supplied
+                            portion(s); two words that look identical once expanded but differ in
+                            what was actually written by the scribe are listed as separate
+                            entries.</p>
          </editorialDecl>
       </encodingDesc>
       <profileDesc>
@@ -75,24 +75,22 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change when="2026-08-29">
-                        This version of the file was generated. 
-                    </change>
+         <change when="2026-08-29"> This
+                        version of the file was generated. </change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <head>REED Abbreviation Wordlist</head>
          <p>This is an automatically generated index of scribal abbreviations found in
-                        the transcribed text of the source documents listed above.
-                        52472 total abbreviated-word
-                        instances were found, representing 12307
+                        the transcribed text of the source documents listed above. 52472 total abbreviated-word instances
+                        were found, representing 12307
                         distinct abbreviated forms, split below by language.</p>
-         <p>Each entry gives the attested form (with editorially supplied letters
-                        marked by <mentioned>ex</mentioned>), its frequency, and a citation back to
-                        the <mentioned>xml:id</mentioned> of the manuscript transcription division
-                        in which each instance occurs, so any attestation can be checked against
-                        its source.</p>
+         <p>Each entry gives the attested form (with editorially supplied letters marked
+                        by <mentioned>ex</mentioned>), its frequency, and a citation back to the
+                            <mentioned>xml:id</mentioned> of the manuscript transcription division
+                        in which each instance occurs, so any attestation can be checked against its
+                        source.</p>
          <div type="dictionary" xml:lang="ang">
             <head>Old English Abbreviations</head>
             <entry xml:id="entry-ang-0001" xml:lang="ang">
