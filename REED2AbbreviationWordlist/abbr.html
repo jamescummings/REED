@@ -234,7 +234,7 @@
     }
 
     /* Pagination button styling */
-    .dataTables_paginate .paginate_button {
+  /*  .dataTables_paginate .paginate_button {
       border: 1px solid var(--reed-border) !important;
       background: var(--reed-panel) !important;
       color: var(--reed-maroon) !important;
@@ -250,7 +250,21 @@
       background: var(--reed-stripe) !important;
       color: var(--reed-maroon-dark) !important;
       border-color: var(--reed-maroon) !important;
-    }
+    } */
+    /* Current (active) page button: white number, maroon background */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: var(--reed-maroon) !important;
+    border-color: var(--reed-maroon) !important;
+    color: #f6ede2 !important;
+}
+
+/* Non-current buttons on hover: light background, dark text stays dark */
+.dataTables_wrapper .dataTables_paginate .paginate_button:not(.current):hover {
+    background: var(--reed-stripe) !important;
+    color: var(--reed-maroon-dark) !important;
+    border-color: var(--reed-maroon) !important;
+}
 
     div.custom-spinner {
       width: auto;
