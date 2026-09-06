@@ -161,13 +161,13 @@ thead input:focus, thead select:focus {
    6. TABLE STRUCTURE (layout, borders, alignment)
    ========================================================= */
 #dictionaryTable {
-  table-layout: auto;
-  border-collapse: collapse;
-}
-@media (min-width: 300px) {
-  #dictionaryTable {
     table-layout: auto;
-  }
+}
+
+@media (max-width: 950px) {
+    .table-panel {
+       max-width: 800px;
+    }
 }
 
 /* Horizontal alignment: center by default for all cells (th and td) */
@@ -256,29 +256,33 @@ table.dataTable thead .sorting_desc:before {
 }
 
 
-td.expansion-col {
-  font-size: 140%;
-  min-width: 250px;
-  white-space: normal;
-  overflow-wrap: anywhere;
-  word-break: break-word;
+td.attestation-col {
+    font-size: 140%;
+    min-width: 150px;
+    max-width: 300px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
+
+
 td.references-col {
-  font-size: 90%;
-  max-width: 200px;
-  white-space: normal;
-  overflow-wrap: anywhere;
-  word-break: break-word;
+    font-size: 90%;
+    min-width: 150px;
+    max-width: 220px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 td.references-col a {
-  overflow-wrap: anywhere;
-  word-break: break-word;
-  color: var(--reed-maroon);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    color: var(--reed-maroon);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
 }
 td.references-col a:hover {
-  border-bottom-color: var(--reed-maroon);
+    border-bottom-color: var(--reed-maroon);
 }
 
 /* =========================================================
