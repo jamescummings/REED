@@ -154,6 +154,26 @@
       border-bottom-color: var(--reed-maroon);
     }
 
+/* Vertical alignment: top, for every td */
+table.dataTable tbody td {
+    padding: 8px;
+    border-right: 1px solid var(--reed-border);
+    vertical-align: top;
+}
+table.dataTable tbody td:last-child {
+    border-right: none;
+}
+
+/* Horizontal alignment: center by default for all cells (th and td) */
+table.dataTable th,
+table.dataTable td {
+    text-align: center;
+}
+
+/* Exception: References column body cells stay left-aligned; its header stays centered */
+td.references-col {
+    text-align: left;
+}
     /* ---- DataTable look & feel ---- */
     #dictionaryTable {
       table-layout: fixed;
