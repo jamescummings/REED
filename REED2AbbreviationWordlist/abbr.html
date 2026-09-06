@@ -36,14 +36,11 @@
     text-align: center;
 }
 
-/* Style the processing overlay box */
-div.dataTables_processing {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200px;
-    margin-left: -100px;
-    margin-top: -26px;
+div.custom-spinner{
+    width: auto;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: auto;
     padding: 10px;
     background: #ffffff;
     color: #333333;
@@ -51,7 +48,7 @@ div.dataTables_processing {
     border-radius: 4px;
     text-align: center;
     z-index: 1000; /* Ensure it appears above the table rows */
-    font-size: 3.2em;
+    font-size: 2em;
 }
 
   </style>
@@ -116,8 +113,8 @@ div.dataTables_processing {
             "deferRender": true,
             "pageLength": 25,
             "orderCellsTop": true,
-            "language": {"search": "Filter:",
-            		"processing": '<div class="custom-spinner">Loading Records...Please Wait</div>'},
+              "language": {"search": "Filter:",
+                    "loadingRecords": '<div class="custom-spinner"><p>Loading REED Abbreviations...Please Wait</p></div>'},
             "order": [[ 2, "asc" ]],
             "autoWidth": false,
             "responsive": true,
