@@ -6,300 +6,328 @@
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"/>
   <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css"/>
   <style>
-
-    :root {
-      --reed-maroon: #6e1f2b;
-      --reed-maroon-dark: #591824;
-      --reed-navy: #1f2b3a;
-      --reed-cream: #faf6ef;
-      --reed-panel: #ffffff;
-      --reed-border: #e0d7c8;
-      --reed-stripe: #f6f0e6;
-      --reed-text: #2a2a28;
-      --reed-muted: #6b6357;
-    }
-
-    body {
-      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
-      background: var(--reed-cream);
-      color: var(--reed-text);
-      padding: 0 0 50px 0;
-      margin: 0;
-      line-height: 1.5;
-    }
-
-    h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-weight: normal;
-      letter-spacing: 0.02em;
-    }
-
-    /* ---- Header banner ---- */
-    .site-header {
-      background: linear-gradient(180deg, var(--reed-maroon) 0%, var(--reed-maroon-dark) 100%);
-      color: #f6ede2;
-      padding: 28px 50px;
-      margin-bottom: 0;
-      border-bottom: 4px solid var(--reed-navy);
-    }
-    .site-header h2 {
-      margin: 0;
-      font-size: 1.9em;
-      color: #f6ede2;
-    }
-    .site-header .subtitle {
-      margin: 6px 0 0 0;
-      font-size: 0.95em;
-      color: #d9c4b0;
-      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
-    }
-
-    /* ---- Content wrapper ---- */
-    .content-wrap {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 50px;
-    }
-
-    .intro-panel {
-      background: var(--reed-panel);
-      border: 1px solid var(--reed-border);
-      border-radius: 4px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-      padding: 20px 26px;
-      margin-top: 30px;
-    }
-    .intro-panel p {
-      margin: 0 0 12px 0;
-      font-size: 0.97em;
-      color: var(--reed-text);
-    }
-    .intro-panel p:last-child { margin-bottom: 0; }
-    .intro-panel ul {
-      margin: 8px 0 16px 0;
-      columns: 2;
-      -webkit-columns: 2;
-      column-gap: 40px;
-    }
-    .intro-panel li {
-      font-size: 0.95em;
-      margin-bottom: 4px;
-    }
-    .intro-panel a {
-      color: var(--reed-maroon);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-    }
-    .intro-panel a:hover {
-      border-bottom-color: var(--reed-maroon);
-    }
-
-    .hint-note {
-      font-style: italic;
-      color: var(--reed-muted);
-      font-size: 0.9em !important;
-    }
-
-    /* ---- Table panel ---- */
-    .table-panel {
-      background: var(--reed-panel);
-      border: 1px solid var(--reed-border);
-      border-radius: 4px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-      padding: 20px 26px 26px 26px;
-      margin-top: 24px;
-    }
-
-    .ex { font-style: italic; color: var(--reed-muted); }
-
-    thead input, thead select {
-      width: 100%;
-      padding: 4px 6px;
-      box-sizing: border-box;
-      font-weight: normal;
-      border: 1px solid var(--reed-border);
-      border-radius: 3px;
-      background: var(--reed-cream);
-      color: var(--reed-text);
-      font-size: 0.9em;
-    }
-    thead input:focus, thead select:focus {
-      outline: none;
-      border-color: var(--reed-maroon);
-      background: #fff;
-    }
-
-    td.attestation-col {
-      font-size: 140%;
-      min-width: 250px;
-      white-space: normal;
-      overflow-wrap: anywhere;
-      word-break: break-word;
-    }
-    td.references-col {
-      font-size: 90%;
-      max-width: 200px;
-      white-space: normal;
-      overflow-wrap: anywhere;
-      word-break: break-word;
-    }
-    td.references-col a {
-      overflow-wrap: anywhere;
-      word-break: break-word;
-      color: var(--reed-maroon);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-    }
-    td.references-col a:hover {
-      border-bottom-color: var(--reed-maroon);
-    }
-
-/* Vertical alignment: top, for every td */
-table.dataTable tbody td {
-    padding: 8px;
-    border-right: 1px solid var(--reed-border);
-    vertical-align: top;
+  /* CSS reorganised from my mess by Claude when I asked it to. Maybe it is good for something. */
+/* =========================================================
+   1. VARIABLES
+   ========================================================= */
+:root {
+  --reed-maroon: #6e1f2b;
+  --reed-maroon-dark: #591824;
+  --reed-navy: #1f2b3a;
+  --reed-cream: #faf6ef;
+  --reed-panel: #ffffff;
+  --reed-border: #e0d7c8;
+  --reed-stripe: #f6f0e6;
+  --reed-text: #2a2a28;
+  --reed-muted: #6b6357;
 }
-table.dataTable tbody td:last-child {
-    border-right: none;
-    text-align:left;
+
+/* =========================================================
+   2. BASE / TYPOGRAPHY
+   ========================================================= */
+body {
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  background: var(--reed-cream);
+  color: var(--reed-text);
+  padding: 0 0 50px 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
+
+/* =========================================================
+   3. PAGE LAYOUT (header banner, content wrapper, version note)
+   ========================================================= */
+.site-header {
+  background: linear-gradient(180deg, var(--reed-maroon) 0%, var(--reed-maroon-dark) 100%);
+  color: #f6ede2;
+  padding: 28px 50px;
+  margin-bottom: 0;
+  border-bottom: 4px solid var(--reed-navy);
+}
+.site-header h2 {
+  margin: 0;
+  font-size: 1.9em;
+  color: #f6ede2;
+}
+.site-header .subtitle {
+  margin: 6px 0 0 0;
+  font-size: 0.95em;
+  color: #d9c4b0;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.content-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.version-note {
+  max-width: 1100px;
+  margin: 12px auto 0 auto;
+  padding: 0 50px;
+  text-align: right;
+  color: var(--reed-muted);
+  font-size: 0.85em;
+}
+
+/* =========================================================
+   4. CONTENT PANELS (intro text, table container)
+   ========================================================= */
+.intro-panel {
+  background: var(--reed-panel);
+  border: 1px solid var(--reed-border);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  padding: 20px 26px;
+  margin-top: 30px;
+}
+.intro-panel p {
+  margin: 0 0 12px 0;
+  font-size: 0.97em;
+  color: var(--reed-text);
+}
+.intro-panel p:last-child { margin-bottom: 0; }
+.intro-panel ul {
+  margin: 8px 0 16px 0;
+  columns: 2;
+  -webkit-columns: 2;
+  column-gap: 40px;
+}
+.intro-panel li {
+  font-size: 0.95em;
+  margin-bottom: 4px;
+}
+.intro-panel a {
+  color: var(--reed-maroon);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.intro-panel a:hover {
+  border-bottom-color: var(--reed-maroon);
+}
+
+.hint-note {
+  font-style: italic;
+  color: var(--reed-muted);
+  font-size: 0.9em !important;
+}
+
+.table-panel {
+  background: var(--reed-panel);
+  border: 1px solid var(--reed-border);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  padding: 20px 26px 26px 26px;
+  margin-top: 24px;
+}
+
+/* =========================================================
+   5. FORM CONTROLS (filter inputs / dropdown)
+   ========================================================= */
+thead input, thead select {
+  width: 100%;
+  padding: 4px 6px;
+  box-sizing: border-box;
+  font-weight: normal;
+  border: 1px solid var(--reed-border);
+  border-radius: 3px;
+  background: var(--reed-cream);
+  color: var(--reed-text);
+  font-size: 0.9em;
+}
+thead input:focus, thead select:focus {
+  outline: none;
+  border-color: var(--reed-maroon);
+  background: #fff;
+}
+
+/* =========================================================
+   6. TABLE STRUCTURE (layout, borders, alignment)
+   ========================================================= */
+#dictionaryTable {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+@media (min-width: 768px) {
+  #dictionaryTable {
+    table-layout: fixed;
+  }
 }
 
 /* Horizontal alignment: center by default for all cells (th and td) */
 table.dataTable th,
 table.dataTable td {
-    text-align: center;
+  text-align: center;
 }
 
-/* Exception: References column body cells stay left-aligned; its header stays centered */
-td.references-col {
-    text-align: left;
+/* Merged: was declared twice (once with vertical-align, once with
+   padding/border-right only) -- combined into a single rule. */
+table.dataTable tbody td {
+  padding: 8px;
+  border-right: 1px solid var(--reed-border);
+  vertical-align: top;
 }
-    /* ---- DataTable look & feel ---- */
-    #dictionaryTable {
-      table-layout: fixed;
-      border-collapse: collapse;
-    }
-    @media (min-width: 768px) {
-      #dictionaryTable {
-        table-layout: fixed;
-      }
-    }
+/* NOTE: also declared as a duplicate elsewhere in the original file;
+   merged here. See flag #2 above re: redundancy with .references-col. */
+table.dataTable tbody td:last-child {
+  border-right: none;
+  text-align: left;
+}
 
-   table.dataTable thead th {
-    background: var(--reed-maroon);
-    color: #f6ede2;
-    font-weight: 600;
-    font-size: 0.92em;
-    letter-spacing: 0.02em;
-    border-bottom: none !important;
-    border-right: 1px solid var(--reed-maroon-dark);
-    padding: 10px 8px;
-    text-align:center;
+table.dataTable thead th {
+  border-right: 1px solid var(--reed-maroon-dark);
 }
 table.dataTable thead th:last-child {
-    border-right: none;
+  border-right: none;
 }
 
 table.dataTable thead tr.filters th {
-    background: var(--reed-maroon-dark);
-    padding: 6px 8px;
-    border-right: 1px solid var(--reed-maroon);
+  border-right: 1px solid var(--reed-maroon);
 }
 table.dataTable thead tr.filters th:last-child {
-    border-right: none;
+  border-right: none;
 }
 
-table.dataTable tbody td {
-    padding: 8px;
-    border-right: 1px solid var(--reed-border);
+/* Exception: References column body cells stay left-aligned;
+   its header stays centered (handled by the general rule above,
+   since the header th does not carry this class). */
+td.references-col {
+  text-align: left;
 }
-table.dataTable tbody td:last-child {
-    border-right: none;
+
+/* =========================================================
+   7. TABLE APPEARANCE (colors, fonts, per-column styling)
+   ========================================================= */
+.ex { font-style: italic; color: var(--reed-muted); }
+
+table.dataTable thead th {
+  background: var(--reed-maroon);
+  color: #f6ede2;
+  font-weight: 600;
+  font-size: 0.92em;
+  letter-spacing: 0.02em;
+  border-bottom: none !important;
+  padding: 10px 8px;
 }
 
-    /* Sort icons -- tone down default DataTables arrows to match palette */
-    table.dataTable thead .sorting:after,
-    table.dataTable thead .sorting_asc:after,
-    table.dataTable thead .sorting_desc:after {
-      color: #e8d9c4;
-      opacity: 0.85;
-    }
+table.dataTable thead tr.filters th {
+  background: var(--reed-maroon-dark);
+  padding: 6px 8px;
+}
 
-    .dataTables_filter {
-      padding: 20px 0;
-      color: var(--reed-text);
-    }
-    .dataTables_filter input {
-      border: 1px solid var(--reed-border);
-      border-radius: 3px;
-      padding: 4px 8px;
-    }
-    .dataTables_length select {
-      border: 1px solid var(--reed-border);
-      border-radius: 3px;
-      padding: 2px 4px;
-    }
-    .dataTables_info {
-      color: var(--reed-muted);
-      font-size: 0.9em;
-      padding-top: 10px;
-    }
+/* Sort icons -- tone down default DataTables arrows to match palette */
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:after {
+  color: #e8d9c4;
+  opacity: 0.85;
+}
 
-    .top-controls {
-      margin-bottom: 15px;
-    }
-    .bottom-controls {
-      margin-top: 15px;
-      border-top: 1px solid var(--reed-border);
-      padding-top: 10px;
-    }
-    .top-controls .dataTables_paginate,
-    .bottom-controls .dataTables_paginate {
-      float: none;
-      text-align: center;
-    }
-    
-   /* Pagination button styling */
-    /* Current (active) page button: white number, maroon background */
+td.attestation-col {
+  font-size: 140%;
+  min-width: 250px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+td.references-col {
+  font-size: 90%;
+  max-width: 200px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+td.references-col a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  color: var(--reed-maroon);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+td.references-col a:hover {
+  border-bottom-color: var(--reed-maroon);
+}
+
+/* =========================================================
+   8. DATATABLES UI CHROME (filter/length/info bar, pagination)
+   ========================================================= */
+.dataTables_filter {
+  padding: 20px 0;
+  color: var(--reed-text);
+}
+.dataTables_filter input {
+  border: 1px solid var(--reed-border);
+  border-radius: 3px;
+  padding: 4px 8px;
+}
+.dataTables_length select {
+  border: 1px solid var(--reed-border);
+  border-radius: 3px;
+  padding: 2px 4px;
+}
+.dataTables_info {
+  color: var(--reed-muted);
+  font-size: 0.9em;
+  padding-top: 10px;
+}
+
+.top-controls {
+  margin-bottom: 15px;
+}
+.bottom-controls {
+  margin-top: 15px;
+  border-top: 1px solid var(--reed-border);
+  padding-top: 10px;
+}
+.top-controls .dataTables_paginate,
+.bottom-controls .dataTables_paginate {
+  float: none;
+  text-align: center;
+}
+
+/* Current (active) page button: white number, maroon background */
 .dataTables_wrapper .dataTables_paginate .paginate_button.current,
 .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-    background: var(--reed-maroon) !important;
-    border-color: var(--reed-maroon) !important;
-    color: #f6ede2 !important;
+  background: var(--reed-maroon) !important;
+  border-color: var(--reed-maroon) !important;
+  color: #f6ede2 !important;
 }
 
 /* Non-current buttons on hover: light background, dark text stays dark */
 .dataTables_wrapper .dataTables_paginate .paginate_button:not(.current):hover {
-    background: var(--reed-stripe) !important;
-    color: var(--reed-maroon-dark) !important;
-    border-color: var(--reed-maroon) !important;
+  background: var(--reed-stripe) !important;
+  color: var(--reed-maroon-dark) !important;
+  border-color: var(--reed-maroon) !important;
 }
 
-    div.custom-spinner {
-      width: auto;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: auto;
-      padding: 14px 20px;
-      background: var(--reed-panel);
-      color: var(--reed-maroon-dark);
-      border: 1px solid var(--reed-border);
-      border-radius: 4px;
-      text-align: center;
-      z-index: 1000;
-      font-size: 1.3em;
-      font-family: Georgia, "Times New Roman", serif;
-    }
+/* =========================================================
+   9. MISC (loading spinner)
+   ========================================================= */
+div.custom-spinner {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  padding: 14px 20px;
+  background: var(--reed-panel);
+  color: var(--reed-maroon-dark);
+  border: 1px solid var(--reed-border);
+  border-radius: 4px;
+  text-align: center;
+  z-index: 1000;
+  font-size: 1.3em;
+  font-family: Georgia, "Times New Roman", serif;
+}
 
-    .version-note {
-      max-width: 1100px;
-      margin: 12px auto 0 auto;
-      padding: 0 50px;
-      text-align: right;
-      color: var(--reed-muted);
-      font-size: 0.85em;
-    }
+
+
 
   </style>
 </head>
