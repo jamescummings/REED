@@ -14,10 +14,6 @@
       box-sizing: border-box;
       font-weight: normal;
     }
-    /* table-layout: fixed is intentionally NOT used here -- it fights with
-       the Responsive extension's own width recalculation on narrow screens.
-       Column widths below are treated as desktop-preferred widths; Responsive
-       takes over sizing/hiding decisions as the viewport shrinks. */
     td.attestation-col {
       font-size: 140%;
       min-width: 250px;
@@ -39,6 +35,25 @@
     float: none;
     text-align: center;
 }
+
+/* Style the processing overlay box */
+div.dataTables_processing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    margin-top: -26px;
+    padding: 10px;
+    background: #ffffff;
+    color: #333333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    z-index: 1000; /* Ensure it appears above the table rows */
+    font-size: 3.2em;
+}
+
   </style>
 </head>
 <body>
@@ -101,7 +116,8 @@
             "deferRender": true,
             "pageLength": 25,
             "orderCellsTop": true,
-            "language": {"search": "Filter:"},
+            "language": {"search": "Filter:",
+            		"processing": '<div class="custom-spinner">Loading Records...Please Wait</div>'},
             "order": [[ 2, "asc" ]],
             "autoWidth": false,
             "responsive": true,
