@@ -31,7 +31,7 @@
     <xsl:param name="files" select="'*.xml'" as="xs:string"/>
     <xsl:param name="recurse" select="'no'" as="xs:string"/>
 
-    <!-- If false (the default), <note type="foot"> content, modern editorial commentary,
+    <!-- If false (the default), <note> content, modern editorial commentary,
          not part of the manuscript transcription, is skipped entirely so it can never
          contribute a spurious abbreviation to the wordlist. Set to true() to include it. -->
     <xsl:param name="include-editorial-notes" select="false()" as="xs:boolean"/>
@@ -200,8 +200,8 @@
                     <editorialDecl>
                         <p>Word forms are drawn only from div[type="transcription"] elements in each
                             source document.</p>
-                        <p>By default, content inside note[type="foot"] (editorial footnotes) is
-                            excluded, since footnotes contain modern editorial commentary rather
+                        <p>By default, content inside notes is
+                            excluded, since notes contain modern editorial commentary rather
                             than transcribed text; this run was generated with
                                 include-editorial-notes=<xsl:value-of
                                 select="$include-editorial-notes"/>.</p>
@@ -325,7 +325,7 @@
     <!-- Editorial footnotes are excluded by default (see $include-editorial-notes):
          they contain modern editorial commentary, not transcribed manuscript text,
          and can otherwise smuggle in spurious abbreviation "instances". -->
-    <xsl:template match="note[@type = 'foot']" mode="tokenize">
+    <xsl:template match="note" mode="tokenize">
         <xsl:choose>
             <xsl:when test="$include-editorial-notes">
                 <xsl:apply-templates mode="tokenize"/>
@@ -333,7 +333,7 @@
             <xsl:otherwise>
                 <xsl:if test="$debug">
                     <xsl:message select="
-                            concat('[reed-abbrev] skipping editorial footnote in ',
+                            concat('[reed-abbrev] skipping editorial note in ',
                             reed:transcription-id(.))"/>
                 </xsl:if>
             </xsl:otherwise>
@@ -441,7 +441,7 @@
                             <xsl:choose>
                                 <xsl:when test="string-length(@div) gt 0">
                                     <ref
-                                        target="{concat('https://ereed.org/records/', substring-before(@div, '-transcription'))}">
+                                        target="{concat('https://ereed.org/records/', substring-before(@div, '-transcription'), '/')}">
                                         <xsl:value-of
                                             select="substring-before(@div, '-transcription')"/>
                                     </ref>
@@ -552,7 +552,7 @@
         <xsl:param name="lang" as="xs:string"/>
         <xsl:param name="n" as="xs:integer"/>
         <xsl:sequence
-            select="concat('entry-', translate($lang, ':', '-'), '-', format-number($n, '0000'))"/>
+            select="concat(translate($lang, ':', '-'), '-', format-number($n, '0000'))"/>
     </xsl:function>
 
 </xsl:stylesheet>

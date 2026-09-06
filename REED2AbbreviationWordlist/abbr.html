@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>REED Abbreviations Dictionary</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"/>
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css"/>
+  <style>
+    body { font-family: sans-serif; padding: 50px; }
+    .ex { font-style: italic; color: #555; }
+    thead input, thead select {
+      width: 100%;
+      padding: 3px;
+      box-sizing: border-box;
+      font-weight: normal;
+    }
+    /* table-layout: fixed is intentionally NOT used here -- it fights with
+       the Responsive extension's own width recalculation on narrow screens.
+       Column widths below are treated as desktop-preferred widths; Responsive
+       takes over sizing/hiding decisions as the viewport shrinks. */
+    td.attestation-col {
+      font-size: 140%;
+      min-width: 250px;
+      white-space: normal;   /* let long attestations wrap instead of overflowing */
+      word-break: break-word;
+    }
+    
+    .dataTables_filter {
+    padding: 20px;
+}
+.top-controls {
+    margin-bottom: 15px;
+}
+.bottom-controls {
+    margin-top: 15px;
+}
+.top-controls .dataTables_paginate,
+.bottom-controls .dataTables_paginate {
+    float: none;
+    text-align: center;
+}
+  </style>
+</head>
+<body>
+  <h2>Abbreviations from REED Collections</h2>
+  
+  <p>This is a dictionary wordlist generated from <a href="https://ereed.org">Records of Early English Drama</a> (REED) <a href="https://github.com/REEDProject/Collections/tree/master/tei/records">data</a> as TEI XML and JSON for display in a dataTable. You can sort and filter by each column or generally overall. The source for this is available at: <a href="https://github.com/jamescummings/REED/tree/master/REED2AbbreviationWordlist">https://github.com/jamescummings/REED/tree/master/REED2AbbreviationWordlist</a> and is licensed CC+By.</p>
+  <p> There are 11735 distinct forms from 51628 abbreviated word instances across 5 languages found in 10 collections.</p> 
+  <p> If you want to filter the attestation column for an expanded word containing certain non-contiguous letters separate them by a space, e.g. 'a p i' and it should find them in any order.</p>  
+
+  
+  <table id="dictionaryTable" class="display responsive nowrap" style="width:100%">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Language</th>
+        <th>Attestation</th>
+        <th>Frequency</th>
+        <th>References</th>
+      </tr>
+      <tr class="filters">
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+  </table>
+  
+  <p style="float:right;"><strong>Version:</strong> 2026-09-06</p>
+  
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+  <script>
+    $(document).ready(function() {
+
+        // Which column index gets a dropdown instead of a text input
+        var DROPDOWN_COLUMNS = [1]; // "Language" is column index 1
+
+        // Declared BEFORE DataTable() is called, so createdCell always has
+        // a valid object to read from -- even for cells rendered synchronously
+        // during initialization, before initComplete has run.
+        var langColorMap = {};
+
+        // 1. Build empty placeholder cells for text inputs now;
+        //    the dropdown for column 1 is built later, once data has loaded.
+        $('#dictionaryTable thead tr.filters th').each(function(i) {
+            if (DROPDOWN_COLUMNS.indexOf(i) === -1) {
+                var title = $('#dictionaryTable thead tr:first th').eq(i).text();
+                $(this).html('<input type="text" placeholder="Filter ' + title + '" id="'+title+'" />');
+                $('input', this).on('click', function(e) { e.stopPropagation(); });
+            }
+            // else: leave empty for now, filled in initComplete below
+        });
+
+        // 2. Initialize DataTable
+        var table = $('#dictionaryTable').DataTable({
+            "ajax": "abbr.json",
+            "deferRender": true,
+            "pageLength": 25,
+            "orderCellsTop": true,
+            "language": {"search": "Filter:"},
+            "order": [[ 2, "asc" ]],
+            "autoWidth": false,
+            "responsive": true,
+            "dom": "<'top-controls'lfp>t<'bottom-controls'lfip>",
+            "columnDefs": [
+                // responsivePriority: lower number = hidden LATER (kept visible longer)
+                // as the screen narrows. Adjust these to taste.
+                { "targets": 0, "width": "90px", "responsivePriority": 3 },   // ID
+                {
+                    "targets": 1,
+                    "width": "100px",
+                    "responsivePriority": 2,                                  // Language
+                    "createdCell": function (td, cellData) {
+                        $(td).css('background-color', langColorMap[cellData] || '#eeeeee');
+                    }
+                },
+                { "targets": 2, "width": "400px", "className": "attestation-col", "responsivePriority": 1 }, // Attestation
+                { "targets": 3, "width": "60px", "responsivePriority": 4 },   // Frequency
+                { "targets": 4, "responsivePriority": 5 }                      // References
+            ],
+            "columns": [
+                { "data": "id" },
+                { "data": "language" },
+                { "data": "attestation" },
+                { "data": "frequency" },
+                { "data": "references" }
+            ],
+            "initComplete": function () {
+                var api = this.api();
+
+                api.columns().every(function () {
+                    var column = this;
+                    var colIdx = column.index();
+                    var filterCell = $('.filters th').eq(colIdx);
+
+                    if (DROPDOWN_COLUMNS.indexOf(colIdx) !== -1) {
+                        var uniqueLangs = column.data().unique().sort().toArray().filter(Boolean);
+
+                        // Build an evenly-spaced color for each distinct language.
+                        // Mutate the existing langColorMap object in place (don't
+                        // reassign it) so createdCell's closure stays in sync.
+                        uniqueLangs.forEach(function (lang, i) {
+                            var hue = Math.round((360 / uniqueLangs.length) * i);
+                            langColorMap[lang] = 'hsl(' + hue + ', 40%, 95%)';
+                        });
+
+                        // Dropdown build
+                        var select = $('<select><option value="">All</option></select>')
+                            .appendTo(filterCell.empty())
+                            .on('click', function(e) { e.stopPropagation(); })
+                            .on('change', function () {
+                                var val = $.fn.dataTable.util.escapeRegex($(this).val());
+                                column.search(val ? '^' + val + '$' : '', true, false).draw();
+                            });
+
+                        uniqueLangs.forEach(function (d) {
+                            select.append('<option value="' + d + '">' + d + '</option>');
+                        });
+
+                        // Now that colors are known, repaint any already-rendered
+                        // cells in this column (e.g. the first page).
+                        api.column(colIdx).nodes().each(function (td) {
+                            var val = $(td).text();
+                            $(td).css('background-color', langColorMap[val] || '#eeeeee');
+                        });
+
+                    } else {
+                        $('input', filterCell).on('keyup change clear', function () {
+                            if (column.search() !== this.value) {
+                                column.search(this.value).draw();
+                            }
+                        });
+                    }
+                });
+            }
+        });
+    });
+  </script>
+</body>
+</html>
