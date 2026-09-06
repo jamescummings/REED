@@ -6,117 +6,333 @@
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"/>
   <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css"/>
   <style>
-    body { font-family: sans-serif; padding: 50px; }
-    .ex { font-style: italic; color: #555; }
+
+    :root {
+      --reed-maroon: #6e1f2b;
+      --reed-maroon-dark: #591824;
+      --reed-navy: #1f2b3a;
+      --reed-cream: #faf6ef;
+      --reed-panel: #ffffff;
+      --reed-border: #e0d7c8;
+      --reed-stripe: #f6f0e6;
+      --reed-text: #2a2a28;
+      --reed-muted: #6b6357;
+    }
+
+    body {
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--reed-cream);
+      color: var(--reed-text);
+      padding: 0 0 50px 0;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: normal;
+      letter-spacing: 0.02em;
+    }
+
+    /* ---- Header banner ---- */
+    .site-header {
+      background: linear-gradient(180deg, var(--reed-maroon) 0%, var(--reed-maroon-dark) 100%);
+      color: #f6ede2;
+      padding: 28px 50px;
+      margin-bottom: 0;
+      border-bottom: 4px solid var(--reed-navy);
+    }
+    .site-header h2 {
+      margin: 0;
+      font-size: 1.9em;
+      color: #f6ede2;
+    }
+    .site-header .subtitle {
+      margin: 6px 0 0 0;
+      font-size: 0.95em;
+      color: #d9c4b0;
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    /* ---- Content wrapper ---- */
+    .content-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 50px;
+    }
+
+    .intro-panel {
+      background: var(--reed-panel);
+      border: 1px solid var(--reed-border);
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      padding: 20px 26px;
+      margin-top: 30px;
+    }
+    .intro-panel p {
+      margin: 0 0 12px 0;
+      font-size: 0.97em;
+      color: var(--reed-text);
+    }
+    .intro-panel p:last-child { margin-bottom: 0; }
+    .intro-panel ul {
+      margin: 8px 0 16px 0;
+      columns: 2;
+      -webkit-columns: 2;
+      column-gap: 40px;
+    }
+    .intro-panel li {
+      font-size: 0.95em;
+      margin-bottom: 4px;
+    }
+    .intro-panel a {
+      color: var(--reed-maroon);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    .intro-panel a:hover {
+      border-bottom-color: var(--reed-maroon);
+    }
+
+    .hint-note {
+      font-style: italic;
+      color: var(--reed-muted);
+      font-size: 0.9em !important;
+    }
+
+    /* ---- Table panel ---- */
+    .table-panel {
+      background: var(--reed-panel);
+      border: 1px solid var(--reed-border);
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      padding: 20px 26px 26px 26px;
+      margin-top: 24px;
+    }
+
+    .ex { font-style: italic; color: var(--reed-muted); }
+
     thead input, thead select {
       width: 100%;
-      padding: 3px;
+      padding: 4px 6px;
       box-sizing: border-box;
       font-weight: normal;
+      border: 1px solid var(--reed-border);
+      border-radius: 3px;
+      background: var(--reed-cream);
+      color: var(--reed-text);
+      font-size: 0.9em;
     }
+    thead input:focus, thead select:focus {
+      outline: none;
+      border-color: var(--reed-maroon);
+      background: #fff;
+    }
+
     td.attestation-col {
       font-size: 140%;
       min-width: 250px;
-      white-space: normal; 
-      word-break: normal;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      word-break: break-word;
     }
     td.references-col {
-    font-size: 90%;
-    max-width: 200px;      
-    white-space: normal;
-    overflow-wrap: normal;
-    word-break: normal;
-}
-td.references-col a {
-    overflow-wrap: anywhere;
-    word-break: normal;
-}
-    
-    .dataTables_filter {
-    padding: 20px;
-}
-.top-controls {
-    margin-bottom: 15px;
-}
-.bottom-controls {
-    margin-top: 15px;
-}
-.top-controls .dataTables_paginate,
-.bottom-controls .dataTables_paginate {
-    float: none;
-    text-align: center;
-}
-
-div.custom-spinner{
-    width: auto;
-    margin-left: auto;
-    margin-right:auto;
-    margin-top: auto;
-    padding: 10px;
-    background: #ffffff;
-    color: #333333;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    text-align: center;
-    z-index: 1000; /* Ensure it appears above the table rows */
-    font-size: 2em;
-}
-#dictionaryTable {
-    table-layout: fixed;
-}
-@media (min-width: 768px) {
-    #dictionaryTable {
-        table-layout: fixed;
+      font-size: 90%;
+      max-width: 200px;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      word-break: break-word;
     }
-}
+    td.references-col a {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      color: var(--reed-maroon);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    td.references-col a:hover {
+      border-bottom-color: var(--reed-maroon);
+    }
+
+    /* ---- DataTable look & feel ---- */
+    #dictionaryTable {
+      table-layout: fixed;
+      border-collapse: collapse;
+    }
+    @media (min-width: 768px) {
+      #dictionaryTable {
+        table-layout: fixed;
+      }
+    }
+
+    table.dataTable thead th {
+      background: var(--reed-maroon);
+      color: #f6ede2;
+      font-weight: 600;
+      font-size: 0.92em;
+      letter-spacing: 0.02em;
+      border-bottom: none !important;
+      padding: 10px 8px;
+    }
+    table.dataTable thead tr.filters th {
+      background: var(--reed-maroon-dark);
+      padding: 6px 8px;
+    }
+    table.dataTable tbody tr {
+      border-bottom: 1px solid var(--reed-border);
+    }
+    table.dataTable tbody tr:nth-child(even) {
+      background-color: var(--reed-stripe);
+    }
+    table.dataTable tbody tr:hover {
+      background-color: #f1e4d3 !important;
+    }
+    table.dataTable tbody td {
+      padding: 8px;
+    }
+
+    /* Sort icons -- tone down default DataTables arrows to match palette */
+    table.dataTable thead .sorting:after,
+    table.dataTable thead .sorting_asc:after,
+    table.dataTable thead .sorting_desc:after {
+      color: #e8d9c4;
+      opacity: 0.85;
+    }
+
+    .dataTables_filter {
+      padding: 20px 0;
+      color: var(--reed-text);
+    }
+    .dataTables_filter input {
+      border: 1px solid var(--reed-border);
+      border-radius: 3px;
+      padding: 4px 8px;
+    }
+    .dataTables_length select {
+      border: 1px solid var(--reed-border);
+      border-radius: 3px;
+      padding: 2px 4px;
+    }
+    .dataTables_info {
+      color: var(--reed-muted);
+      font-size: 0.9em;
+      padding-top: 10px;
+    }
+
+    .top-controls {
+      margin-bottom: 15px;
+    }
+    .bottom-controls {
+      margin-top: 15px;
+      border-top: 1px solid var(--reed-border);
+      padding-top: 10px;
+    }
+    .top-controls .dataTables_paginate,
+    .bottom-controls .dataTables_paginate {
+      float: none;
+      text-align: center;
+    }
+
+    /* Pagination button styling */
+    .dataTables_paginate .paginate_button {
+      border: 1px solid var(--reed-border) !important;
+      background: var(--reed-panel) !important;
+      color: var(--reed-maroon) !important;
+      border-radius: 3px;
+      margin: 0 2px !important;
+    }
+    .dataTables_paginate .paginate_button.current {
+      background: var(--reed-maroon) !important;
+      border-color: var(--reed-maroon) !important;
+      color: #f6ede2 !important;
+    }
+    .dataTables_paginate .paginate_button:hover {
+      background: var(--reed-stripe) !important;
+      color: var(--reed-maroon-dark) !important;
+      border-color: var(--reed-maroon) !important;
+    }
+
+    div.custom-spinner {
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      padding: 14px 20px;
+      background: var(--reed-panel);
+      color: var(--reed-maroon-dark);
+      border: 1px solid var(--reed-border);
+      border-radius: 4px;
+      text-align: center;
+      z-index: 1000;
+      font-size: 1.3em;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .version-note {
+      max-width: 1100px;
+      margin: 12px auto 0 auto;
+      padding: 0 50px;
+      text-align: right;
+      color: var(--reed-muted);
+      font-size: 0.85em;
+    }
+
   </style>
 </head>
 <body>
-  <h2>Abbreviations from REED Collections</h2>
-  
-  <p>This is a dictionary wordlist generated from <a href="https://ereed.org">Records of Early English Drama</a> (REED) <a href="https://github.com/REEDProject/Collections/tree/master/tei/records">data</a> as TEI XML and JSON for display in a dataTable. You can sort and filter by each column or generally overall. The source for this is available at: <a href="https://github.com/jamescummings/REED/tree/master/REED2AbbreviationWordlist">https://github.com/jamescummings/REED/tree/master/REED2AbbreviationWordlist</a> and is licensed CC+By.</p>
-  <p> There are 11735 distinct forms from 51628 abbreviated word instances across 5 languages found in 10 collections.
-  These collections are: 
-  <ul>
-  <li>Bear Gardens/Hope Playhouse (bghop) </li>
-  <li>Berkshire (berks) </li>
-  <li>Cambridgeshire (cambs)</li>
-  <li>Hampshire (hamps)</li>
-  <li>Newington Butts Playhouse (nwbts) </li>
-  <li>Rose Playhouse (rosep)</li>
-  <li>Staffordshire (staff)</li>
-  <li>Suffolk (suffk)</li>
-  <li>York (yorkc)</li>
-  <li>Yorkshire North Riding (yksnr)</li>
-  </ul>
-  
-  </p> 
-  <p> If you want to filter the attestation column for an expanded word containing certain non-contiguous letters separate them by a space, e.g. 'a p i' and it should find them in any order.</p>  
-  
-  
 
-  
-  <table id="dictionaryTable" class="display responsive " style="width:100%">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Language</th>
-        <th>Attestation</th>
-        <th>Frequency</th>
-        <th>References</th>
-      </tr>
-      <tr class="filters">
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-      </tr>
-    </thead>
-  </table>
-  
-  <p style="float:right;"><strong>Version:</strong> 2026-09-06</p>
-  
+  <div class="site-header">
+    <h2>Abbreviations from REED Collections</h2>
+    <p class="subtitle">A searchable index of scribal abbreviations drawn from the Records of Early English Drama corpus</p>
+  </div>
+
+  <div class="content-wrap">
+
+    <div class="intro-panel">
+      <p>This is a dictionary wordlist generated from <a href="https://ereed.org">Records of Early English Drama</a> (REED) <a href="https://github.com/REEDProject/Collections/tree/master/tei/records">data</a> as TEI XML and JSON for display in a dataTable. You can sort and filter by each column or generally overall. The source for this is available at: <a href="https://github.com/jamescummings/REED/tree/master/REED2AbbreviationWordlist">https://github.com/jamescummings/REED/tree/master/REED2AbbreviationWordlist</a> and is licensed CC-BY.</p>
+
+      <p>There are 11735 distinct forms from 51628 abbreviated word instances across 5 languages found in 10 collections. These collections are:</p>
+      <ul>
+        <li>Bear Gardens/Hope Playhouse (bghop)</li>
+        <li>Berkshire (berks)</li>
+        <li>Cambridgeshire (cambs)</li>
+        <li>Hampshire (hamps)</li>
+        <li>Newington Butts Playhouse (nwbts)</li>
+        <li>Rose Playhouse (rosep)</li>
+        <li>Staffordshire (staff)</li>
+        <li>Suffolk (suffk)</li>
+        <li>York (yorkc)</li>
+        <li>Yorkshire North Riding (yksnr)</li>
+      </ul>
+
+      <p class="hint-note">If you want to filter the attestation column for an expanded word containing certain non-contiguous letters, separate them by a space, e.g. 'a p i', and it should find them in any order.</p>
+    </div>
+
+    <div class="table-panel">
+      <table id="dictionaryTable" class="display responsive" style="width:100%">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Language</th>
+            <th>Attestation</th>
+            <th>Frequency</th>
+            <th>References</th>
+          </tr>
+          <tr class="filters">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+  </div>
+
+  <p class="version-note"><strong>Version:</strong> 2026-09-06</p>
+
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
