@@ -234,12 +234,27 @@ table.dataTable thead tr.filters th {
 }
 
 /* Sort icons -- tone down default DataTables arrows to match palette */
-table.dataTable thead .sorting:after,
-table.dataTable thead .sorting_asc:after,
-table.dataTable thead .sorting_desc:after {
-  color: #e8d9c4;
-  opacity: 0.85;
+/* Unsorted columns: show both up and down arrows, faint/muted */
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting:after {
+  opacity: 0.4 !important;
+  color: #f0dcc8 !important;
 }
+
+/* Currently-sorted column: the active direction's arrow is bright and prominent */
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_desc:after {
+  opacity: 1 !important;
+  color: #ffffff !important;
+}
+
+/* Currently-sorted column: the OTHER (inactive) direction stays faint, matching unsorted columns */
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:before {
+  opacity: 0.4 !important;
+  color: #f0dcc8 !important;
+}
+
 
 td.expansion-col {
   font-size: 140%;
