@@ -229,7 +229,7 @@ table.dataTable thead .sorting_desc:after {
   opacity: 0.85;
 }
 
-td.attestation-col {
+td.expansion-col {
   font-size: 140%;
   min-width: 250px;
   white-space: normal;
@@ -356,7 +356,7 @@ div.custom-spinner {
         <li>Yorkshire North Riding (yksnr)</li>
       </ul>
 
-      <p class="hint-note">If you want to filter the attestation column for an expanded word containing certain non-contiguous letters, separate them by a space, e.g. 'a p i', and it should find them in any order.</p>
+      <p class="hint-note">If you want to filter the expansion column for an expanded word containing certain non-contiguous letters, separate them by a space, e.g. 'a p i', and it should find them in any order.</p>
     </div>
 
     <div class="table-panel">
@@ -365,7 +365,7 @@ div.custom-spinner {
           <tr>
             <th>ID</th>
             <th>Language</th>
-            <th>Attestation</th>
+            <th>Expansion</th>
             <th>Frequency</th>
             <th>References</th>
           </tr>
@@ -433,14 +433,14 @@ div.custom-spinner {
                         $(td).css('background-color', langColorMap[cellData] || '#eeeeee');
                     }
                 },
-                { "targets": 2, "width": "400px", "className": "attestation-col", "responsivePriority": 1 }, // Attestation
+                { "targets": 2, "width": "400px", "className": "expansion-col", "responsivePriority": 1 }, // Expansion
                 { "targets": 3, "width": "60px", "className": "frequency-col", "responsivePriority": 4 },   // Frequency
                 { "targets": 4, "width": "200px", "className": "references-col","responsivePriority": 5 }                      // References
             ],
             "columns": [
                 { "data": "id" },
                 { "data": "language" },
-                { "data": "attestation" },
+                { "data": "expansion" },
                 { "data": "frequency" },
                 { "data": "references" }
             ],

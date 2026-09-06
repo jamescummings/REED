@@ -22,46 +22,6 @@
         'und': 'Undetermined-language'
         }"/>
     
-  <!--  <xsl:template match="/">
-        <!-\- DataTables expects a JSON object with a root "data" array -\->
-        <xsl:variable name="json-output" as="map(*)">
-            <xsl:map>
-                <xsl:map-entry key="'data'">
-                    <xsl:array>
-                        <xsl:for-each select="//entry">
-                            <xsl:map>
-                                
-                                <!-\- ID -\->
-                                <xsl:map-entry key="'id'" select="string(@xml:id)"/>
-                                
-                                <!-\- Language -\->
-                                <xsl:variable name="code" select="string(@xml:lang)"/>
-                                <xsl:map-entry key="'language'" select="($lang-labels($code), $code)[1]"/>
-                                
-                                <!-\- Attestation (Serialize HTML tags like <span class="ex"> to a string) -\->
-                                <xsl:variable name="attestationHtml">
-                                    <xsl:apply-templates select="form/orth"/>
-                                </xsl:variable>
-                                <xsl:map-entry key="'attestation'" select="serialize($attestationHtml, map{'method': 'html'})"/>
-                                
-                                <!-\- Frequency -\->
-                                <xsl:map-entry key="'frequency'" select="string(usg[@type='frequency'])"/>
-                                
-                                <!-\- References (Serialize <a> tags to a string) -\->
-                                <xsl:variable name="refsHtml">
-                                    <xsl:for-each select="cit/ref">
-                                        <a href="{@target}" target="_blank"><xsl:value-of select="."/></a>
-                                        <xsl:if test="position() != last()">, </xsl:if>
-                                    </xsl:for-each>
-                                </xsl:variable>
-                                <xsl:map-entry key="'references'" select="serialize($refsHtml, map{'method': 'html'})"/>
-                                
-                            </xsl:map>
-                        </xsl:for-each>
-                    </xsl:array>
-                </xsl:map-entry>
-            </xsl:map>
-        </xsl:variable>-->
         
     <xsl:template match="/">
         
@@ -79,14 +39,14 @@
                         key="'language'"
                         select="($lang-labels($code), $code)[1]"/>
                     
-                    <!-- Attestation -->
-                    <xsl:variable name="attestationHtml">
+                    <!-- expansion -->
+                    <xsl:variable name="expansionHtml">
                         <xsl:apply-templates select="form/orth"/>
                     </xsl:variable>
                     
                     <xsl:map-entry
-                        key="'attestation'"
-                        select="serialize($attestationHtml, map{'method': 'html'})"/>
+                        key="'expansion'"
+                        select="serialize($expansionHtml, map{'method': 'html'})"/>
                     
                     <!-- Frequency -->
                     <xsl:map-entry
