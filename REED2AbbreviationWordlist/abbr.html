@@ -165,31 +165,36 @@
       }
     }
 
-    table.dataTable thead th {
-      background: var(--reed-maroon);
-      color: #f6ede2;
-      font-weight: 600;
-      font-size: 0.92em;
-      letter-spacing: 0.02em;
-      border-bottom: none !important;
-      padding: 10px 8px;
-    }
-    table.dataTable thead tr.filters th {
-      background: var(--reed-maroon-dark);
-      padding: 6px 8px;
-    }
-    table.dataTable tbody tr {
-      border-bottom: 1px solid var(--reed-border);
-    }
-    table.dataTable tbody tr:nth-child(even) {
-      background-color: var(--reed-stripe);
-    }
-    table.dataTable tbody tr:hover {
-      background-color: #f1e4d3 !important;
-    }
-    table.dataTable tbody td {
-      padding: 8px;
-    }
+   table.dataTable thead th {
+    background: var(--reed-maroon);
+    color: #f6ede2;
+    font-weight: 600;
+    font-size: 0.92em;
+    letter-spacing: 0.02em;
+    border-bottom: none !important;
+    border-right: 1px solid var(--reed-maroon-dark);
+    padding: 10px 8px;
+}
+table.dataTable thead th:last-child {
+    border-right: none;
+}
+
+table.dataTable thead tr.filters th {
+    background: var(--reed-maroon-dark);
+    padding: 6px 8px;
+    border-right: 1px solid var(--reed-maroon);
+}
+table.dataTable thead tr.filters th:last-child {
+    border-right: none;
+}
+
+table.dataTable tbody td {
+    padding: 8px;
+    border-right: 1px solid var(--reed-border);
+}
+table.dataTable tbody td:last-child {
+    border-right: none;
+}
 
     /* Sort icons -- tone down default DataTables arrows to match palette */
     table.dataTable thead .sorting:after,
@@ -232,25 +237,8 @@
       float: none;
       text-align: center;
     }
-
-    /* Pagination button styling */
-  /*  .dataTables_paginate .paginate_button {
-      border: 1px solid var(--reed-border) !important;
-      background: var(--reed-panel) !important;
-      color: var(--reed-maroon) !important;
-      border-radius: 3px;
-      margin: 0 2px !important;
-    }
-    .dataTables_paginate .paginate_button.current {
-      background: var(--reed-maroon) !important;
-      border-color: var(--reed-maroon) !important;
-      color: #f6ede2 !important;
-    }
-    .dataTables_paginate .paginate_button:hover {
-      background: var(--reed-stripe) !important;
-      color: var(--reed-maroon-dark) !important;
-      border-color: var(--reed-maroon) !important;
-    } */
+    
+   /* Pagination button styling */
     /* Current (active) page button: white number, maroon background */
 .dataTables_wrapper .dataTables_paginate .paginate_button.current,
 .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
