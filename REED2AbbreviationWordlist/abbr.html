@@ -20,7 +20,17 @@
       white-space: normal;   /* let long attestations wrap instead of overflowing */
       word-break: break-word;
     }
-    td.references-col {font-size:90%; min-width:200px; white-space:normal; word-break:break;word;}
+    td.references-col {
+    font-size: 90%;
+    max-width: 200px;      
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+td.references-col a {
+    overflow-wrap: normal;
+    word-break: break-word;
+}
     
     .dataTables_filter {
     padding: 20px;
