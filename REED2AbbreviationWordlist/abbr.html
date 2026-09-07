@@ -307,6 +307,11 @@ td.references-col a:hover {
   font-size: 0.9em;
   padding-top: 10px;
 }
+.dataTables_filter input::placeholder {
+  color: var(--reed-muted);
+  font-style: italic;
+  opacity: 1; /* Firefox default is a dimmed opacity on placeholders; this normalizes it */
+}
 
 .top-controls {
   margin-bottom: 15px;
@@ -501,8 +506,10 @@ div.custom-spinner {
             "deferRender": true,
             "pageLength": 25,
             "orderCellsTop": true,
-              "language": {"search": "Filter:",
-                    "loadingRecords": '<div class="custom-spinner"><p>Loading REED Abbreviations...Please Wait</p></div>'},
+              "language": {
+              "search": "Filter:",
+              "searchPlaceholder": "Search all columns at once...",
+              "loadingRecords": '<div class="custom-spinner"><p>Loading REED Abbreviations...Please Wait</p></div>'},
             "order": [[ 2, "asc" ]],
             "autoWidth": false,
             "responsive": true,
