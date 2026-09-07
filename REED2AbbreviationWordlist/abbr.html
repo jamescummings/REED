@@ -316,12 +316,67 @@ td.references-col a:hover {
   border-top: 1px solid var(--reed-border);
   padding-top: 10px;
 }
+
+.top-controls-row,
+.bottom-controls-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;      /* let length/filter wrap onto their own lines if needed -- fine, since pagination is no longer sharing space with them */
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.top-controls-page,
+.bottom-controls-page {
+  width: 100%;
+  clear: both;
+}
+
+/* Length + filter no longer need DataTables' default floats,
+   since flex on the parent row now handles their layout */
+.top-controls-row .dataTables_length,
+.top-controls-row .dataTables_filter,
+.bottom-controls-row .dataTables_length,
+.bottom-controls-row .dataTables_filter {
+  float: none;
+}
+
 .top-controls .dataTables_paginate,
 .bottom-controls .dataTables_paginate {
   float: none;
   text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  overflow-x: auto;
+  padding-bottom: 4px; /* small gutter so a scrollbar, if it appears, doesn't touch the buttons */
+  -webkit-overflow-scrolling: touch; /* smooth momentum scrolling on iOS if it does scroll */
 }
 
+/* Prevent individual buttons from ever shrinking/wrapping their own text */
+.dataTables_paginate .paginate_button {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+/* Buy extra room before scrolling kicks in: shrink button padding/margins
+   progressively as the viewport narrows, so more buttons fit on one line
+   for longer before the overflow-x scroll becomes necessary. */
+@media (max-width: 700px) {
+  .dataTables_paginate .paginate_button {
+    padding: 0.3em 0.6em !important;
+    margin: 0 1px !important;
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 480px) {
+  .dataTables_paginate .paginate_button {
+    padding: 0.25em 0.45em !important;
+    margin: 0 !important;
+    font-size: 0.82em;
+  }
+}
 /* Current (active) page button: white number, maroon background */
 .dataTables_wrapper .dataTables_paginate .paginate_button.current,
 .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
@@ -451,7 +506,7 @@ div.custom-spinner {
             "order": [[ 2, "asc" ]],
             "autoWidth": false,
             "responsive": true,
-            "dom": "<'top-controls'lfp>t<'bottom-controls'lfip>",
+            "dom": "<'top-controls'<'top-controls-row'lf><'top-controls-page'p>>t<'bottom-controls'<'bottom-controls-page'p><'bottom-controls-row'lif>>",
             "columnDefs": [
                 // responsivePriority: lower number = hidden LATER (kept visible longer)
                 // as the screen narrows. Adjust these to taste.
@@ -464,7 +519,7 @@ div.custom-spinner {
                         $(td).css('background-color', langColorMap[cellData] || '#eeeeee');
                     }
                 },
-                { "targets": 2, "width": "400px", "className": "expansion-col", "responsivePriority": 1 }, // Expansion
+                { "targets": 2, "width": "300px", "className": "expansion-col", "responsivePriority": 1 }, // Expansion
                 { "targets": 3, "width": "60px", "className": "frequency-col", "responsivePriority": 4 },   // Frequency
                 { "targets": 4, "width": "200px", "className": "references-col","responsivePriority": 5 }                      // References
             ],
