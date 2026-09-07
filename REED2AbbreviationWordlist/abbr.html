@@ -47,10 +47,37 @@ h2 {
   color: #f6ede2;
   padding: 28px 50px;
   margin-bottom: 0;
-  border-bottom: 2px solid var(--reed-navy);
+  border-bottom: 1px solid var(--reed-text);
 }
 
+.site-header {
+  background: linear-gradient(180deg, var(--reed-maroon) 0%, var(--reed-maroon-dark) 100%);
+  color: #f6ede2;
+  padding: 28px 50px;
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--reed-text);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+  position: relative;
+  z-index: 2;
+}
 
+.intro-panel {
+  background: var(--reed-panel);
+  border: 1px solid var(--reed-border);
+  border-radius: 4px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  padding: 20px 26px;
+  margin-top: 30px;
+}
+
+.table-panel {
+  background: var(--reed-panel);
+  border: 1px solid var(--reed-border);
+  border-radius: 4px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  padding: 20px 26px 26px 26px;
+  margin-top: 24px;
+}
 
 .site-header h2 {
   margin: 0;
@@ -89,18 +116,12 @@ h2 {
 /* =========================================================
    4. CONTENT PANELS (intro text, table container)
    ========================================================= */
-.intro-panel {
-  background: var(--reed-panel);
-  border: 1px solid var(--reed-border);
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  padding: 20px 26px;
-  margin-top: 30px;
-}
+
 .intro-panel p {
   margin: 0 0 12px 0;
   font-size: 1em;
   color: var(--reed-text);
+  word-break:anywhere;
 }
 .intro-panel p:last-child { margin-bottom: 0; }
 .intro-panel ul {
@@ -128,14 +149,6 @@ h2 {
   font-size: 1em !important;
 }
 
-.table-panel {
-  background: var(--reed-panel);
-  border: 1px solid var(--reed-border);
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  padding: 20px 26px 26px 26px;
-  margin-top: 24px;
-}
 
 /* =========================================================
    5. FORM CONTROLS (filter inputs / dropdown)
@@ -353,12 +366,12 @@ td.references-col a:hover {
 }
 
 .top-controls {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .bottom-controls {
-  margin-top: 15px;
+  margin-top: 10px;
   border-top: 1px solid var(--reed-border);
-  padding-top: 10px;
+  padding-top: 2px;
 }
 
 .top-controls-row,
@@ -367,8 +380,8 @@ td.references-col a:hover {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;      /* let length/filter wrap onto their own lines if needed -- fine, since pagination is no longer sharing space with them */
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 5px;
+  margin-bottom: 2px;
 }
 
 .top-controls-page,
@@ -386,6 +399,9 @@ td.references-col a:hover {
   float: none;
 }
 
+.dataTables_paginate{  color: var(--reed-maroon)!important;}
+#dictionaryTable_previous{  color: var(--reed-maroon)!important;}
+
 .top-controls .dataTables_paginate,
 .bottom-controls .dataTables_paginate {
   float: none;
@@ -394,7 +410,8 @@ td.references-col a:hover {
   flex-wrap: nowrap;
   justify-content: center;
   overflow-x: auto;
-  padding-bottom: 4px; /* small gutter so a scrollbar, if it appears, doesn't touch the buttons */
+    color: var(--reed-maroon)!important;
+  padding:2x!important;
   -webkit-overflow-scrolling: touch; /* smooth momentum scrolling on iOS if it does scroll */
 }
 
@@ -409,7 +426,7 @@ td.references-col a:hover {
    for longer before the overflow-x scroll becomes necessary. */
 @media (max-width: 700px) {
   .dataTables_paginate .paginate_button {
-    padding: 0.3em 0.6em !important;
+
     margin: 0 1px !important;
     font-size: 0.9em;
   }
@@ -426,18 +443,21 @@ td.references-col a:hover {
 .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
   background: var(--reed-maroon) !important;
   border-color: var(--reed-maroon) !important;
-  color: #f6ede2 !important;
+  color: var(--reed-text) !important;
+  font-weight:600;
 }
 
 /* Non-current buttons on hover: light background, dark text stays dark */
-.dataTables_wrapper .dataTables_paginate .paginate_button:not(.current):hover {
+.dataTables_wrapper .dataTables_paginate .paginate_button:not(.current):hover, #dictionaryTable_previous:hover {
   background: var(--reed-stripe) !important;
-  color: var(--reed-maroon-dark) !important;
+  color: var(--reed-text) !important;
+  font-weight:600;
   border-color: var(--reed-maroon) !important;
+
 }
 
 /* =========================================================
-   9. MISC (loading spinner)
+   9. MISC (loading spinner, show/hide)
    ========================================================= */
 div.custom-spinner {
   width: auto;
@@ -455,7 +475,48 @@ div.custom-spinner {
   font-family: Georgia, "Times New Roman", serif;
 }
 
+.hideable {
+  overflow: hidden;
+  max-height: 500px; /* generous enough to fit the content when expanded */
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+  opacity: 1;
+}
+.hideable.collapsed {
+  max-height: 0;
+  opacity: 0;
+  margin: 0;
+}
 
+.intro-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 10px;
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--reed-maroon);
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.intro-toggle:hover {
+  border-bottom-color: var(--reed-maroon);
+}
+.intro-toggle:focus {
+  outline: 2px solid var(--reed-maroon);
+  outline-offset: 2px;
+}
+.toggle-arrow {
+  font-size: 0.75em;
+  transition: transform 0.25s ease;
+}
+.intro-toggle.is-collapsed .toggle-arrow {
+  transform: rotate(180deg);
+}
 
 
   </style>
@@ -470,8 +531,8 @@ div.custom-spinner {
   <div class="content-wrap">
 
     <div class="intro-panel">
-      <p>This is a dictionary wordlist generated from <a href="https://ereed.org">Records of Early English Drama</a> (REED) <a href="https://github.com/REEDProject/Collections/tree/master/tei/records">data</a> as TEI XML and JSON for display in a dataTable. You can sort and filter by each column or generally overall. The source for this is available at: <a href="https://github.com/jamescummings/REED/tree/master/REED2AbbreviationWordlist">https://github.com/jamescummings/REED/tree/master/REED2AbbreviationWordlist</a> and is licensed CC-BY.</p>
-
+      <p>This is a dictionary wordlist generated from <a href="https://ereed.org">Records of Early English Drama</a> (REED) <a href="https://github.com/REEDProject/Collections/tree/master/tei/records">data</a> as <a href="http://tei-c.org">TEI XML</a> as a main format and then JSON for this dataTable generated from that. The source for this is available at: <a href="https://github.com/jamescummings/REED/tree/master/REED2AbbreviationWordlist">https://github.com/jamescummings/REED/tree/master/REED2AbbreviationWordlist</a> and is licensed CC-BY by <a href="https://bsky.app/profile/jamescummings.bsky.social">@jamescummings.bsky.social</a>.</p>
+<div class="hideable" id="introHideable">
       <p>There are 11735 distinct forms from 51628 abbreviated word instances across 5 languages found in 10 collections. These collections are:</p>
       <ul>
         <li>Bear Gardens/Hope Playhouse (bghop)</li>
@@ -486,7 +547,11 @@ div.custom-spinner {
         <li>Yorkshire North Riding (yksnr)</li>
       </ul>
 
-      <p class="hint-note">If you want to filter the expansion column for an expanded word containing certain non-contiguous letters, separate them by a space, e.g. 'a p i', and it should find them in any order.</p>
+      <p class="hint-note">You can sort and filter by each column or generally overall. <br/>If you want to filter the expansion column for an expanded word containing certain non-contiguous letters, separate them by a space, e.g. 'a p i', and it should find them in any order.</p>
+    </div>
+     <button type="button" class="intro-toggle" id="introToggle" aria-expanded="true" aria-controls="introHideable">
+    Show less <span class="toggle-arrow">▲</span>
+  </button>
     </div>
 
     <div class="table-panel">
@@ -518,7 +583,22 @@ div.custom-spinner {
   <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
   <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggle = document.getElementById('introToggle');
+    var hideable = document.getElementById('introHideable');
+
+    toggle.addEventListener('click', function () {
+      var isCollapsed = hideable.classList.toggle('collapsed');
+      toggle.classList.toggle('is-collapsed', isCollapsed);
+      toggle.setAttribute('aria-expanded', String(!isCollapsed));
+      toggle.childNodes[0].textContent = isCollapsed ? 'Show more ' : 'Show less ';
+    });
+  });
+</script>
+  <script>
     $(document).ready(function() {
+    
+    
 
         // Which column index gets a dropdown instead of a text input
         var DROPDOWN_COLUMNS = [1]; // "Language" is column index 1
