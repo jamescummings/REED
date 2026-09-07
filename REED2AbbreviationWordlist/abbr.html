@@ -155,8 +155,52 @@ thead input:focus, thead select:focus {
   outline: none;
   border-color: var(--reed-maroon);
   background: #fff;
+  border-width: 2px;
 }
 
+.dataTables_filter input {
+  border: 1px solid var(--reed-border);
+  border-radius: 3px;
+  padding: 4px 8px;
+  background: var(--reed-cream)!important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.dataTables_filter input:focus {
+  outline: none;
+  border: 1px solid var(--reed-maroon);
+  background: var(--reed-cream)!important;
+}
+
+.dataTables_filter input::placeholder {
+  color: var(--reed-muted);
+  font-style: italic;
+  opacity: 1; /* Firefox default is a dimmed opacity on placeholders; this normalizes it */
+
+}
+
+.dataTables_length select,
+.dataTables_length select:focus,
+.dataTables_length select:active,
+.dataTables_length select:hover {
+  border: 1px solid var(--reed-border) !important;
+  border-radius: 3px !important;
+  padding: 2px 22px 2px 4px !important;
+  background: var(--reed-cream) !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M0 0l5 6 5-6z' fill='%236b6357'/></svg>") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 6px center !important;
+}
+
+.dataTables_length select:focus {
+  outline: none !important;
+  border: 1px solid var(--reed-maroon) !important;
+}
 /* =========================================================
    6. TABLE STRUCTURE (layout, borders, alignment)
    ========================================================= */
@@ -306,11 +350,6 @@ td.references-col a:hover {
   color: var(--reed-muted);
   font-size: 0.9em;
   padding-top: 10px;
-}
-.dataTables_filter input::placeholder {
-  color: var(--reed-muted);
-  font-style: italic;
-  opacity: 1; /* Firefox default is a dimmed opacity on placeholders; this normalizes it */
 }
 
 .top-controls {
@@ -528,7 +567,7 @@ div.custom-spinner {
                 },
                 { "targets": 2, "width": "300px", "className": "expansion-col", "responsivePriority": 1 }, // Expansion
                 { "targets": 3, "width": "60px", "className": "frequency-col", "responsivePriority": 4 },   // Frequency
-                { "targets": 4, "width": "200px", "className": "references-col","responsivePriority": 5 }                      // References
+                { "targets": 4, "width": "200px", "className": "references-col","responsivePriority": 5 }   // References
             ],
             "columns": [
                 { "data": "id" },
